@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "author": "Marcello Luatti <marcelloluatti@gmail.com>",
   "dependencies": {
+    "@ant-design/icons": "^4.1.0",
     "antd": "^4.2.5",
     "babel-plugin-styled-components": "^1.10.6",
     "debounce": "^1.2.0",
