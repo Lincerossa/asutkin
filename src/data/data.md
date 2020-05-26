@@ -22,10 +22,25 @@ routes:
         icon: home
         hidden: true
         componentIds: [Hero_alpeGranda, RichText_alpeGranda1]
+  - slug: /viaggi
+    label: Viaggi
+    metaTitle: Viaggi
+    metaDescription: Viaggi descrizione
+    metaImage: ""
+    componentIds: [Hero_escursioni, RichText_escursioni, ListOfCards_escursioni, ListOfCards_escursioni, ListOfCards_escursioni, ListOfCards_escursioni]
+    routes:
+      - slug: /alpe-granda
+        label: Alpe Granda
+        metaTitle: Alpe Granda
+        metaDescription: Alpe Granda descrizione
+        metaImage: ""
+        icon: home
+        hidden: true
+        componentIds: [Hero_alpeGranda, RichText_alpeGranda1]
 
 components:
   - id: Hero_homepage
-    title: Assiucchi
+    supertitle: Asutkin
     image: 
       src: https://res.cloudinary.com/dmgymopan/image/upload/v1590508076/assets/Group_31_e2ynwa.png
   - id: Hero_escursioni
