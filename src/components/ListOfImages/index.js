@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState} from 'react'
 import { Modal } from 'antd';
 import Slider from "react-slick";
 import Image from '../Image'
-import { useCounter } from '../../hooks'
+
 import List from '../List'
 
 import {
@@ -13,41 +13,41 @@ import {
 import * as S from './styles'
 
 export default ({filtes, items}) => {
+  const [index, setIndex] = useState(null)
 
-  const count = useCounter(state => state.count)
-  const set = useCounter(state => state.set)
-  const reset = useCounter(state => state.reset)
+  function handleReset(){
+    setIndex(null)
+  }
 
-
-  const isModalVisible = count === 0 || count
-  return (<>
+  const isModalVisible = index === 0 || index
+  return (
+  <>
   
-  <List columns={3}>
-    {items.map((item, index) => <S.ImageWrapper onClick={() => set(index) }> <Image {...item} /></S.ImageWrapper>)}
-  </List>
+    <List columns={3}>
+      {items.map((item, index) => <S.ImageWrapper onClick={() => setIndex(index) }> <Image {...item} /></S.ImageWrapper>)}
+    </List>
 
     <Modal
       visible={isModalVisible}
       mask
-      onCancel={reset}
-      onOk={reset}
+      onCancel={handleReset}
+      onOk={handleReset}
       footer={null}
       title={null}
-      top={20}
       centered
       width={typeof window !== "undefined" && (window.innerWidth > 768 ? window.innerWidth / 1.5 : window.innerWidth) }
     >
       <S.ModalInner>
-        {isModalVisible && <Slider {...{
+        <Slider {...{
           dots: true,
           arrows: true,
           autoplay: false,
           nextArrow: <RightOutlined />,
           prevArrow: <LeftOutlined />,
-          initialSlide: count
+          initialSlide: index
         }}>
           {items.map((item) => <Image {...item} />)}
-        </Slider>}
+        </Slider>
 
       </S.ModalInner>
     </Modal>
