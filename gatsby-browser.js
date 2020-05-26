@@ -1,5 +1,6 @@
 import React from "react"
 import { ThemeProvider } from 'styled-components'
+import 'antd/dist/antd.css';
 import theme from './src/style/theme'
 import GlobalStyle from './src/style/global'
 

@@ -33,9 +33,10 @@ exports.createPages = ({ actions, graphql }) => {
                 wrapper
                 padder
                 background
+                maintitle
                 supertitle
                 title
-                date
+                subtitle
                 text
                 image {
                   src
@@ -50,6 +51,8 @@ exports.createPages = ({ actions, graphql }) => {
                   content
                   image {
                     src
+                    alt
+                    description
                   }
                 }
               }
