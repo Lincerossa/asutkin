@@ -54,7 +54,7 @@ components:
 
   - id: Hero_alpeGranda
     image: 
-      src: https://res.cloudinary.com/dmgymopan/image/upload/v1590494942/samples/24.05.2020%20-%20Rifugio%20Alpe%20Granda/WhatsApp_Image_2020-05-24_at_18.54.26_ur2xuh.jpg
+      src: https://res.cloudinary.com/dmgymopan/image/upload/v1590504923/24.05.2020/WhatsApp_Image_2020-05-24_at_18.55.00_thik3t.jpg
     supertitle: "24.05.2020"
     title: Rifugio Alpe Granda
     subtitle: Bel paesaggio in una bella giornata di sole 
