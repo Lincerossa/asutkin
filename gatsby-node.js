@@ -33,6 +33,7 @@ exports.createPages = ({ actions, graphql }) => {
                 wrapper
                 padder
                 background
+                supertitle
                 title
                 date
                 text
