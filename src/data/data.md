@@ -46,10 +46,9 @@ components:
         supertitle: "24.05.2020"
         title: Rifugio Alpe Granda
         tags: [ 🏔Valtellina, ⌛︎2h, ⇡ 450m ]
-        subtitle: Bel paesaggio in una bella giornata di sole 
         content: Gita semplice durante una bella giornata di domenica soleggiata
         image:
-          src: https://res.cloudinary.com/dmgymopan/image/upload/v1590494942/samples/24.05.2020%20-%20Rifugio%20Alpe%20Granda/WhatsApp_Image_2020-05-24_at_18.51.43_q1htwn.jpg
+          src: https://res.cloudinary.com/dmgymopan/image/upload/v1590504923/24.05.2020/WhatsApp_Image_2020-05-24_at_18.55.00_thik3t.jpg
 
 
   - id: Hero_alpeGranda
@@ -59,7 +58,7 @@ components:
     title: Rifugio Alpe Granda
     subtitle: Bel paesaggio in una bella giornata di sole 
   - id: RichText_alpeGranda1
-    text: Ecco le foto di Rifugio alpe granda
+    text: Ecco le foto di Rifugio Alpe Granda
     wrapper: regular
     padder: regular
 
