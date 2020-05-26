@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 
 
-export const MediaWrapper = styled.div`
+export const HeroWrapper = styled.div`
   position: relative;
   &:before{
     content: "";
@@ -28,13 +28,17 @@ export const MediaHeader = styled.div`
   bottom: 3rem;
 `
 
-
 export const Supertitle = styled.div`
   font-family: sans-serif;
-  color: ${ props => props.theme.colors.orange};
-  font-size: 1.25rem;
+  color: white;
+  font-size: 3rem;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: ${props => props.theme.colors.primary};
+
 `
 
 export const Title = styled.div`

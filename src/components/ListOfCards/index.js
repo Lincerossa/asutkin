@@ -7,7 +7,7 @@ import List from '../List'
 
 export default ({filtes, items}) => {
 
-  const [activeFilters, setFielters] = useState(null)
+  const [activeFilters, setFilters] = useState(null)
   
   return (<>
   <List columns={3}>

@@ -35,7 +35,7 @@ const Header = ({ routes, currentRoute, inverted }) => {
 
 
                   return(
-                    <S.MenuItem key={slug} isActive={isActive}>
+                    <S.MenuItem key={slug} isActive={isActive} shouldBeInverted={shouldBeInverted}>
                       <Link to={slug}>{label}</Link>
                     </S.MenuItem>
                   )

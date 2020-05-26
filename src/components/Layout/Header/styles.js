@@ -38,7 +38,7 @@ export const Logo = styled.div`
   }
 
   svg {
-    fill: white;
+    fill: ${props => props.shouldBeInverted ? "white" : "black"};
   }
 
   &:hover{
@@ -63,20 +63,6 @@ export const Menu = styled.div`
     display: block;
     position: relative;
   }
-
-
-  a, svg{
-    color: white !important;
-    
-    &:hover{
-      color: ${props => props.theme.colors.primary} !important;
-    }
-
-    @media (min-width: 768px){
-      color: ${props => props.inverted.thirdary} !important;
-    }
-
-  }
 `
 
 export const MenuItems = styled.div`
@@ -98,13 +84,20 @@ export const MenuItems = styled.div`
 `
 
 export const MenuItem = styled.div`
-
   text-transform: uppercase;
   font-weight: 400;
   line-height: 1;
   letter-spacing: .1rem;
   font-size: 1.5rem;
   position: relative;
+  margin-right: 2rem;
+  a {
+    color: ${props => props.isActive ? props.theme.colors.primary : (props.shouldBeInverted ? "auto" : "black")} !important;
+  }
+
+  &:last-of-type{
+    margin: 0;
+  }
 
 `
 
