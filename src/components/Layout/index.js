@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 
 import Header from './Header'
-import Footer from './Footer'
 import Wrapper from '../Wrapper'
 import Background from '../Background'
 import { useMouse } from '../../hooks'
@@ -89,12 +88,6 @@ const Layout = ({ children, pageContext, hasMagicMouse = true, inverted = true, 
       </S.Main>
     
       <Header routes={routes} pathPrefix={siteMetadata.pathPrefix} inverted={inverted ? true : false} />
-          
-      <Background color={theme.colors.secondary}>
-        <Wrapper size="large">
-          <Footer pathPrefix={siteMetadata.pathPrefix} />
-        </Wrapper>
-      </Background>
 
       {hasMagicMouse && <S.MagicMouseWrapper>
         <S.MagicMouse  {...mouseStatus} />
