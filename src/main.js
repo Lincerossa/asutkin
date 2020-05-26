@@ -51,7 +51,6 @@ export default (props) => {
 
       const C = Components[Component]
 
-      console.log({Component, C, props})
       return (
           <MaybeWithBackground {...props}>
             <MaybeWithWrapper {...props}>

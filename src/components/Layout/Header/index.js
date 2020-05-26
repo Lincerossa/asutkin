@@ -12,8 +12,6 @@ const Header = ({ routes, currentRoute, inverted }) => {
   const {scrollDirection, scrollPosition} = useScrollDirection()
   const [isOpen, setMenuOpen] = useState(null)
 
-  console.log({currentRoute})
-
   const innerHeight = (typeof window !== "undefined" && window.innerHeight) || 100
 
   const shouldBeInverted = inverted && (scrollPosition < innerHeight)
