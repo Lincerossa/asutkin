@@ -53,6 +53,7 @@ export default createGlobalStyle`
 
   a{
     color: ${theme.colors.primary} !important;
+    text-decoration: none;
     &:hover{
       color: ${theme.colors.primary} !important;
       

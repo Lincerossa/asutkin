@@ -4,10 +4,10 @@ export const List = styled.div.attrs({
   className: 'List',
 })`
   width: 100%;
-  @media (min-width: 768px){
-    display: grid;
+  display: grid;
+  grid-gap: 2rem;
+  @media (min-width: 1220px){
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 2rem;
   }
   
 `

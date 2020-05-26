@@ -25,7 +25,7 @@ const MyImage = ({ image }) => (
         
       )}
     </LazyImageFull>
-    <S.Description>{image.description}</S.Description>
+    {image.description && <S.Description>{image.description}</S.Description>}
   </S.ImageWrapper>
 
 )

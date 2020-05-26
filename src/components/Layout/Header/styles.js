@@ -97,90 +97,15 @@ export const MenuItems = styled.div`
   }
 `
 
-
 export const MenuItem = styled.div`
-  color: white;
-  margin: 0;
-  display: block;
+
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1;
   letter-spacing: .1rem;
   font-size: 1.5rem;
   position: relative;
-  margin-bottom: 1rem;
 
-  @media (min-width: 768px){
-    font-size: .875rem;
-    font-weight: 600;
-    margin: 0 1.25rem;
-    
-    &:last-child{
-      margin:0;
-    }
-  }
-
-  .toggler {
-    font-size: 1rem;
-    position: absolute;
-    top: .25rem;
-    margin-left: .5rem;
-    @media (min-width: 768px){
-      position: relative;
-      top: auto;
-      font-size: .75rem;
-      margin-left: .25rem;
-    }
-  }
-  ${props => props.isSelected && `
-    a, .toggler{
-      color: ${props.theme.colors.primary} !important;
-    }
-  `}
-`
-
-export const MenuItemsInner = styled.div`
-  color: white;
-  z-index: 1;
-  padding-top: .5rem;
-  display: ${props => props.isSelected ? "block" : "none"};
-
-  a{
-    color: white !important;
-  }
-
-  @media (min-width: 768px){
-    background-color: auto;
-    background: ${props => props.inverted ? 'transparent' : props.theme.colors.lightGray.secondary};
-    z-index: auto;
-    position: absolute;
-  
-    left: 0;
-    width: 200%;
-    a{
-      color: ${props => props.inverted ? 'white' : props.theme.colors.thirdary} !important;
-    }
-  }
-`
-
-
-
-export const MenuItemInner = styled.div`
-  font-size: .75rem;
-  padding: 0.25rem .5rem;
-  
-
-  @media (min-width: 768px){
-    font-size: .8rem;
-    padding: auto;
-    white-space: nowrap;
-  }
-
-  &:hover{
-    a,svg {
-      color: ${props => props.theme.colors.primary} !important;
-    }
-  }
 `
 
 

@@ -12,7 +12,7 @@ routes:
     metaTitle: Escursioni
     metaDescription: Escursioni descrizione
     metaImage: ""
-    componentIds: [Hero_escursioni, RichText_escursioni, ListOfCards_escursioni]
+    componentIds: [Hero_escursioni, RichText_escursioni, ListOfCards_escursioni, ListOfCards_escursioni, ListOfCards_escursioni, ListOfCards_escursioni]
     routes:
       - slug: /alpe-granda
         label: Alpe Granda
@@ -25,19 +25,19 @@ routes:
 
 components:
   - id: Hero_homepage
-    title: Assiucchi 
+    title: Assiucchi
     image: 
-      src: https://res.cloudinary.com/dmgymopan/image/upload/v1590504939/24.05.2020/Screenshot_2020-05-26_at_16.53.18_aw2cd0.png
+      src: https://res.cloudinary.com/dmgymopan/image/upload/v1590508076/assets/Group_31_e2ynwa.png
   - id: Hero_escursioni
     title: Escursioni
     image: 
-      src: https://res.cloudinary.com/dmgymopan/image/upload/v1590504939/24.05.2020/Screenshot_2020-05-26_at_16.53.18_aw2cd0.png
+      src: https://res.cloudinary.com/dmgymopan/image/upload/v1590504923/24.05.2020/WhatsApp_Image_2020-05-24_at_18.55.00_thik3t.jpg
   - id: RichText_escursioni
     text: <p>Di seguito le nostre escursioni</p>
     wrapper: regular
     padder: regular
   - id: ListOfCards_escursioni
-    wrapper: ''
+    wrapper: large
     padder: regular
     items:
       - slug: /escursioni/alpe-granda

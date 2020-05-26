@@ -3,12 +3,10 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 
 import Header from './Header'
-import Wrapper from '../Wrapper'
-import Background from '../Background'
 import { useMouse } from '../../hooks'
 
 import * as S from './styles'
-import theme from "../../style/theme";
+
 
 const Layout = ({ children, pageContext, hasMagicMouse = true, inverted = true,  }) => {
   const { data, currentRoute, siteMetadata } = pageContext
@@ -87,7 +85,7 @@ const Layout = ({ children, pageContext, hasMagicMouse = true, inverted = true, 
         {children}
       </S.Main>
     
-      <Header routes={routes} pathPrefix={siteMetadata.pathPrefix} inverted={inverted ? true : false} />
+      <Header currentRoute={currentRoute} routes={routes} pathPrefix={siteMetadata.pathPrefix} inverted={inverted ? true : false} />
 
       {hasMagicMouse && <S.MagicMouseWrapper>
         <S.MagicMouse  {...mouseStatus} />
