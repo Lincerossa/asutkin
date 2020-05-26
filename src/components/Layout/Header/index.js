@@ -22,7 +22,7 @@ const Header = ({ routes, currentRoute, inverted }) => {
     <S.Header scrollDirection={scrollDirection} isOpen={isOpen} inverted={shouldBeInverted}>
       <Wrapper size="large">
         <S.HeaderInner>
-          <S.Logo shouldBeInverted={shouldBeInverted}>
+          <S.Logo inverted={shouldBeInverted}>
             <Link to="/">
              <Logo />
             </Link>
@@ -35,7 +35,7 @@ const Header = ({ routes, currentRoute, inverted }) => {
 
 
                   return(
-                    <S.MenuItem key={slug} isActive={isActive} shouldBeInverted={shouldBeInverted}>
+                    <S.MenuItem key={slug} isActive={isActive} inverted={shouldBeInverted}>
                       <Link to={slug}>{label}</Link>
                     </S.MenuItem>
                   )

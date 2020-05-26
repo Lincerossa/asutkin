@@ -99,14 +99,41 @@ export default createGlobalStyle`
       }
     }
     .slick-prev{
-      display: none !important;
-      @media (min-width: 768px){
-        display: block !important;
+      left: -1.5rem;
+      font-size: 1rem;
+      background: white;
+      border-radius: 50%;
+      height: 3rem;
+      width: 3rem;
+      display: flex !important;
+      align-items: center;
+      color: ${theme.colors.black.primary};;
+      justify-content: center;
+      &:hover{
+        background: ${theme.colors.primary};;
+        color: white;
       }
-      left: -3rem;
     }
     .slick-next{
-      right: -3rem;
+      right: -1.5rem;
+      font-size: 1rem;
+      background: white;
+      border-radius: 50%;
+      height: 3rem;
+      width: 3rem;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      color: ${theme.colors.black.primary};;
+      &:hover{
+        background: ${theme.colors.primary};;
+        color: white;
+      }
+    }
+
+
+    .slick-dots {
+      padding: .5rem; 
     }
 
 `

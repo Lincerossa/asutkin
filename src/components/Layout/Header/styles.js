@@ -10,7 +10,7 @@ export const Header = styled.div`
   transition: .2s  all;
   transition-timing-function: ease-in;
   justify-content: space-between;
-  background: ${props => props.inverted ? 'transparent' : props.theme.colors.lightGray.secondary};
+  background: ${props => props.inverted ? 'transparent' : "rgb(255,255,255,.9)"};
   box-shadow: ${props => props.inverted ? "none" : "0px 2px 8px rgba(0,0,0,0.15)"};
   ${props => props.scrollDirection === "down"
     ? 'transform: translate(0,-100%);'
@@ -38,7 +38,7 @@ export const Logo = styled.div`
   }
 
   svg {
-    fill: ${props => props.shouldBeInverted ? "white" : "black"};
+    fill: ${props => props.inverted ? "white" : "black"};
   }
 
   &:hover{
@@ -92,7 +92,10 @@ export const MenuItem = styled.div`
   position: relative;
   margin-right: 2rem;
   a {
-    color: ${props => props.isActive ? props.theme.colors.primary : (props.shouldBeInverted ? "auto" : "black")} !important;
+    color: ${props => props.isActive ? props.theme.colors.primary : (props.inverted ? "white" : "black")} !important;
+    &:hover{
+      color: ${props => props.theme.colors.primary} !important;
+    }
   }
 
   &:last-of-type{

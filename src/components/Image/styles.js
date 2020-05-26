@@ -7,6 +7,8 @@ export const ImageWrapper = styled.div`
 `
 export const Image = styled.img`
   transition: all .25s;
+  display: block;
+  width: 100%;
   ${props => props.loading && `
     filter: blur(5px) grayscale(40%);
   `} 

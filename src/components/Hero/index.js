@@ -4,12 +4,13 @@ import Wrapper from '../Wrapper'
 import Image from '../Image'
 import TextDistortion from '../TextDistortion'
 
-const Hero = ({ image, supertitle, title, subtitle }) => (
+const Hero = ({ image, maintitle, title, subtitle, supertitle }) => (
   <S.HeroWrapper>
     <Image image={image} />
-    {supertitle && <S.Supertitle><TextDistortion>{supertitle}</TextDistortion></S.Supertitle>}
+    {maintitle && <S.Maintitle><TextDistortion>{maintitle}</TextDistortion></S.Maintitle>}
     <Wrapper>
       <S.MediaHeader>
+        {supertitle && <S.Supertitle>{supertitle}</S.Supertitle>}
         {title && <S.Title>{title}</S.Title>}
         {subtitle && <S.Subtitle>{subtitle}</S.Subtitle>}
       </S.MediaHeader>

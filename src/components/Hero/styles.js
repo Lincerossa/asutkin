@@ -28,10 +28,11 @@ export const MediaHeader = styled.div`
   bottom: 3rem;
 `
 
-export const Supertitle = styled.div`
+export const Maintitle = styled.div`
   font-family: sans-serif;
   color: white;
   font-size: 3rem;
+  font-weight: 300;
   text-transform: uppercase;
   position: absolute;
   top: 15%;
@@ -41,6 +42,12 @@ export const Supertitle = styled.div`
 
 `
 
+
+export const Supertitle = styled.div`
+  text-transform: uppercase;
+  color: white;
+`
+
 export const Title = styled.div`
   font-size: 3rem;
   font-weight: 600;
@@ -48,6 +55,7 @@ export const Title = styled.div`
   margin-bottom: 1rem;
   color: white;
 `
+
 
 export const Subtitle = styled.div`
   text-transform: uppercase;
