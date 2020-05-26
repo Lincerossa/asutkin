@@ -8,7 +8,7 @@ const Hero = ({ image, maintitle, title, subtitle, supertitle }) => (
   <S.HeroWrapper>
     <Image image={image} />
     {maintitle && <S.Maintitle><TextDistortion>{maintitle}</TextDistortion></S.Maintitle>}
-    <Wrapper>
+    <Wrapper size="large">
       <S.MediaHeader>
         {supertitle && <S.Supertitle>{supertitle}</S.Supertitle>}
         {title && <S.Title>{title}</S.Title>}

@@ -42,7 +42,7 @@ export const MediaWrapper = styled.div`
 
 export const Supertitle = styled.div`
   font-family: sans-serif;
-  color: ${ props => props.theme.colors.orange};
+  color: ${ props => props.theme.colors.gray.primary};
   font-size: .875rem;
   text-transform: uppercase;
   margin-bottom: .5rem;
@@ -52,19 +52,13 @@ export const Title = styled.div`
   font-size: 1.75rem;
   font-weight: 600;
   line-height: 1;
-  margin-bottom: .5rem;
-  color: ${props => props.full ? "white" : props.theme.colors.dark} ;
+  margin-bottom: 1rem;
+  color: white;
 `
 
-export const Subtitle = styled.div`
-  margin-bottom: .5rem;
-  text-transform: uppercase;
-  font-size: .75rem;
-  color: ${props => props.full ? "white" : props.theme.colors.dark} ;
-`
 
 export const Content = styled.div`
-  color: gray;
+  color: ${ props => props.theme.colors.gray.primary};
   font-size: .75rem;
   letter-spacing: .04em;
 `

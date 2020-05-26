@@ -3,7 +3,7 @@ import trimHtml from 'trim-html'
 import Image from '../Image'
 import * as S from './styles'
 
-const Card = ({ options = {}, image, supertitle, title, tags, subtitle, content }) => {
+const Card = ({ options = {}, image, supertitle, title, tags, content }) => {
 
   const { html } = content && trimHtml(content, { limit: 75 });
   const { full= true } = options
@@ -24,7 +24,6 @@ const Card = ({ options = {}, image, supertitle, title, tags, subtitle, content 
             }
           </S.TagsWrapper>
         }
-        {subtitle && <S.Subtitle full={full}>{subtitle}</S.Subtitle>}
         {html && <S.Content>{html}</S.Content>}
       </S.Description>
     </S.Card>
