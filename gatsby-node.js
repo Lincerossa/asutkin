@@ -47,7 +47,6 @@ exports.createPages = ({ actions, graphql }) => {
                   supertitle
                   title
                   tags
-                  subtitle
                   content
                   image {
                     src
