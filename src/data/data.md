@@ -19,9 +19,15 @@ routes:
         metaTitle: Alpe Granda
         metaDescription: Alpe Granda descrizione
         metaImage: ""
-        icon: home
         hidden: true
         componentIds: [Hero_alpeGranda, InfoPanel_alpeGranda, RichText_alpeGranda1, ListOfImages_alpeGranda1, RichText_alpeGranda2, ListOfImages_alpeGranda2]
+      - slug: /crotto-dangri
+        label: Crotto Dangri
+        metaTitle: Crotto Dangri
+        metaDescription: Crotto Dangri descrizione
+        metaImage: ""
+        hidden: true
+        componentIds: [Hero_crottoDangri, InfoPanel_crottoDangri, RichText_crottoDangri, ListOfImages_crottoDangri ]
 
 
 components:
@@ -46,9 +52,16 @@ components:
         supertitle: "24.05.2020"
         title: Rifugio Alpe Granda
         tags: [ 🏔Valtellina, ⌛︎2h, ⇡ 450m ]
-        content: Gita semplice durante una bella giornata di domenica soleggiata
+        content: Gita durante una bella giornata di domenica soleggiata
         image:
           src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590504923/24.05.2020/WhatsApp_Image_2020-05-24_at_18.55.00_thik3t.jpg
+      - slug: /escursioni/crotto-dangri
+        supertitle: "08.03.2020"
+        title: Crotto Dangri
+        tags: [ 🏔Lago di Como, ⌛︎1h, ⇡ 100m ]
+        content: Passeggiata tranquilla per sgranchirsi le gambe
+        image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590593962/08.03.2020/IMG_20200308_161922_b19byh.jpg
 
 
   - id: Hero_alpeGranda
@@ -57,6 +70,13 @@ components:
     supertitle: "24.05.2020"
     title: Rifugio Alpe Granda
     subtitle: Bel paesaggio in una bella giornata di sole
+  
+  - id: Hero_crottoDangri
+    image: 
+      src: https://res.cloudinary.com/dmgymopan/image/upload/q_auto:low/v1590593962/08.03.2020/IMG_20200308_161922_b19byh.jpg
+    supertitle: "08.03.2020"
+    title: Crotto Dangri
+    subtitle: Passeggiata tranquilla per sgranchirsi le gambe
 
   - id: InfoPanel_alpeGranda
     coordinates: [9.658833617, 46.2068017]
@@ -66,10 +86,29 @@ components:
     items: 
       - icon: StepForwardOutlined
         title: Partenza
-        text: Buglio in monte - 1450m
+        text: Sopra i monti di Buglio in monte - 1300m
       - icon: StepBackwardOutlined
         title: Arrivo
-        text: Alpe Granda - 1700m
+        text: Alpe Granda - 1750m
+      - icon: FieldTimeOutlined
+        title: tempo
+        text: 2h
+      - icon: ToolOutlined
+        title: Attezzatura
+        text: Passeggino, e altra roba
+
+  - id: InfoPanel_crottoDangri
+    coordinates: [9.3072946, 46.1732255]
+    wrapper: large
+    padder: big
+    background: #fafafafa
+    items: 
+      - icon: StepForwardOutlined
+        title: Partenza
+        text: Sopra Livo (Gravedona ed Uniti) - 600m
+      - icon: StepBackwardOutlined
+        title: Arrivo
+        text: Crotto Dangri - 650m
       - icon: FieldTimeOutlined
         title: tempo
         text: 1h30min
@@ -80,6 +119,11 @@ components:
 
   - id: RichText_alpeGranda1
     text: <h2>Immagini della salita</h2><p>La salita è stata piuttosto semplice, anche con la bimba a bordo!</p>
+    wrapper: large
+    padder: regular
+
+  - id: RichText_crottoDangri
+    text: <h2>Qualche immagine</h2>
     wrapper: large
     padder: regular
 
@@ -104,6 +148,21 @@ components:
           src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590504926/24.05.2020/WhatsApp_Image_2020-05-24_at_18.54.26_ufvudu.jpg
           alt: " "
           description: Con le montagne tutte attorno
+
+  - id: ListOfImages_crottoDangri
+    wrapper: large
+    padder: regular
+    background: "#fafafafa"
+    items:
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590593962/08.03.2020/IMG_20200308_161922_b19byh.jpg
+          alt: " "
+          description: Lungo la via
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590593962/08.03.2020/IMG_20200308_161330_haii91.jpg
+          alt: " "
+          description: Ecco Asiutkin
+
 
 
   - id: RichText_alpeGranda2
