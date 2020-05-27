@@ -28,11 +28,11 @@ components:
   - id: Hero_homepage
     maintitle: Asutkin
     image: 
-      src: https://res.cloudinary.com/dmgymopan/image/upload/v1590508076/assets/Group_31_e2ynwa.png
+      src: https://res.cloudinary.com/dmgymopan/image/upload/q_auto:low/v1590508076/assets/Group_31_e2ynwa.png
   - id: Hero_escursioni
     title: Escursioni
     image: 
-      src: https://res.cloudinary.com/dmgymopan/image/upload/v1590504923/24.05.2020/WhatsApp_Image_2020-05-24_at_18.55.00_thik3t.jpg
+      src: https://res.cloudinary.com/dmgymopan/image/upload/q_auto:low/v1590504923/24.05.2020/WhatsApp_Image_2020-05-24_at_18.55.00_thik3t.jpg
   - id: RichText_escursioni
     text: <p>Di seguito le nostre escursioni</p>
     wrapper: regular
@@ -48,12 +48,12 @@ components:
         tags: [ 🏔Valtellina, ⌛︎2h, ⇡ 450m ]
         content: Gita semplice durante una bella giornata di domenica soleggiata
         image:
-          src: https://res.cloudinary.com/dmgymopan/image/upload/v1590504923/24.05.2020/WhatsApp_Image_2020-05-24_at_18.55.00_thik3t.jpg
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590504923/24.05.2020/WhatsApp_Image_2020-05-24_at_18.55.00_thik3t.jpg
 
 
   - id: Hero_alpeGranda
     image: 
-      src: https://res.cloudinary.com/dmgymopan/image/upload/v1590504923/24.05.2020/WhatsApp_Image_2020-05-24_at_18.55.00_thik3t.jpg
+      src: https://res.cloudinary.com/dmgymopan/image/upload/q_auto:low/v1590504923/24.05.2020/WhatsApp_Image_2020-05-24_at_18.55.00_thik3t.jpg
     supertitle: "24.05.2020"
     title: Rifugio Alpe Granda
     subtitle: Bel paesaggio in una bella giornata di sole 
@@ -69,19 +69,19 @@ components:
     background: "#fafafafa"
     items:
       - image:
-          src: https://res.cloudinary.com/dmgymopan/image/upload/v1590504923/24.05.2020/WhatsApp_Image_2020-05-24_at_22.03.39_pqfsr2.jpg
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590504923/24.05.2020/WhatsApp_Image_2020-05-24_at_22.03.39_pqfsr2.jpg
           alt: " "
           description: Salendo verso la cima
       - image:
-          src: https://res.cloudinary.com/dmgymopan/image/upload/v1590504923/24.05.2020/WhatsApp_Image_2020-05-24_at_18.55.00_thik3t.jpg
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590504923/24.05.2020/WhatsApp_Image_2020-05-24_at_18.55.00_thik3t.jpg
           alt: " "
           description: Sempre piu' in alto
       - image:
-          src: https://res.cloudinary.com/dmgymopan/image/upload/v1590504922/24.05.2020/WhatsApp_Image_2020-05-24_at_18.54.34_zl6un9.jpg
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590504922/24.05.2020/WhatsApp_Image_2020-05-24_at_18.54.34_zl6un9.jpg
           alt: " "
           description: Ecco il prato finale
       - image:
-          src: https://res.cloudinary.com/dmgymopan/image/upload/v1590504926/24.05.2020/WhatsApp_Image_2020-05-24_at_18.54.26_ufvudu.jpg
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590504926/24.05.2020/WhatsApp_Image_2020-05-24_at_18.54.26_ufvudu.jpg
           alt: " "
           description: Con le montagne tutte attorno
 
@@ -97,6 +97,6 @@ components:
     background: "#fafafafa"
     items:
       - image:
-          src: https://res.cloudinary.com/dmgymopan/image/upload/v1590504923/24.05.2020/WhatsApp_Image_2020-05-24_at_18.51.43_rquvuf.jpg
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590504923/24.05.2020/WhatsApp_Image_2020-05-24_at_18.51.43_rquvuf.jpg
           alt: ""
           description: Ed ecco Asutkin
