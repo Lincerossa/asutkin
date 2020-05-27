@@ -9,21 +9,28 @@ export const InfoPanel = styled.div`
    }
 `
 export const ItemsWrapper = styled.div`
+  margin-bottom: 1rem;
+  @media (min-width: 768px){
+    margin: 0;
+  }
 
 `
 export const Item = styled.div`
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
+  @media (min-width: 768px){
+    margin: 1rem;
+  }
  
 `
 
 export const ItemTitle = styled.div`
   color:${props => props.theme.colors.primary};
   margin-bottom: .5rem;
+  font-weight: 300;
 `
 
 export const ItemInner   = styled.div`
    display: flex;
- 
 `
 
 export const ItemIconWrapper = styled.div`
@@ -32,10 +39,16 @@ export const ItemIconWrapper = styled.div`
   justify-content: center;
   border-radius: 50%;
   background-color: ${props => props.theme.colors.gray.secondary};
-  height: 3rem;
-  width: 3rem;
+  height: 2rem;
+  width: 2rem;
   margin-right: 1rem;
   color:${props => props.theme.colors.black.primary};
+  font-size: .75rem;
+  @media (min-width: 768px){
+    height: 3rem;
+    width: 3rem;
+    font-size: 1rem;
+  }
 `
 
 
