@@ -12,7 +12,7 @@ routes:
     metaTitle: Escursioni
     metaDescription: Escursioni descrizione
     metaImage: ""
-    componentIds: [Hero_escursioni, RichText_escursioni, ListOfCards_escursioni,]
+    componentIds: [Hero_escursioni, RichText_escursioni, ListOfCards_escursioni]
     routes:
       - slug: /alpe-granda
         label: Alpe Granda
@@ -21,7 +21,7 @@ routes:
         metaImage: ""
         icon: home
         hidden: true
-        componentIds: [Hero_alpeGranda, RichText_alpeGranda1, ListOfImages_alpeGranda1, RichText_alpeGranda2, ListOfImages_alpeGranda2]
+        componentIds: [Hero_alpeGranda, InfoPanel_alpeGranda, RichText_alpeGranda1, ListOfImages_alpeGranda1, RichText_alpeGranda2, ListOfImages_alpeGranda2]
 
 
 components:
@@ -56,12 +56,32 @@ components:
       src: https://res.cloudinary.com/dmgymopan/image/upload/q_auto:low/v1590504923/24.05.2020/WhatsApp_Image_2020-05-24_at_18.55.00_thik3t.jpg
     supertitle: "24.05.2020"
     title: Rifugio Alpe Granda
-    subtitle: Bel paesaggio in una bella giornata di sole 
-  - id: RichText_alpeGranda1
-    text: Ecco le foto di Rifugio Alpe Granda
-    wrapper: regular
-    padder: regular
+    subtitle: Bel paesaggio in una bella giornata di sole
 
+  - id: InfoPanel_alpeGranda
+    coordinates: [9.658833617, 46.2068017]
+    wrapper: large
+    padder: big
+    background: #fafafafa
+    items: 
+      - icon: StepForwardOutlined
+        title: Partenza
+        text: Buglio in monte - 1450m
+      - icon: StepBackwardOutlined
+        title: Arrivo
+        text: Alpe Granda - 1700m
+      - icon: FieldTimeOutlined
+        title: tempo
+        text: 1h30min
+      - icon: ToolOutlined
+        title: Attezzatura
+        text: Passeggino, e altra roba
+
+
+  - id: RichText_alpeGranda1
+    text: <h2>Immagini della salita</h2><p>La salita è stata piuttosto semplice, anche con la bimba a bordo!</p>
+    wrapper: large
+    padder: regular
 
   - id: ListOfImages_alpeGranda1
     wrapper: large
@@ -87,8 +107,8 @@ components:
 
 
   - id: RichText_alpeGranda2
-    text: Ed infine eccola, Asutkin
-    wrapper: regular
+    text: <h2>L'arrivo</h2><p>Ed infine eccola, Asutkin</p>
+    wrapper: large
     padder: regular
 
   - id: ListOfImages_alpeGranda2

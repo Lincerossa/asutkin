@@ -41,13 +41,16 @@ exports.createPages = ({ actions, graphql }) => {
                 image {
                   src
                 }
+                coordinates
 
                 items {
                   slug
                   supertitle
                   title
                   tags
+                  icon
                   content
+                  text
                   image {
                     src
                     alt
