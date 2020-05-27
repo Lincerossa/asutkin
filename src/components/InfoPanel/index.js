@@ -1,8 +1,13 @@
 import React from 'react'
-import Map from '../Map'
-
 import * as S from './styles'
 import * as Icons from '@ant-design/icons';
+  
+const Map = React.lazy(() =>
+  import("../Map")
+)
+
+
+
 
 
 const InfoPanel = ({ coordinates, items }) => (
@@ -26,7 +31,11 @@ const InfoPanel = ({ coordinates, items }) => (
       }
     </S.ItemsWrapper>
     <S.MapWrapper>
-      <Map coordinates={coordinates} />
+      {typeof window !== "undefined" && (
+        <React.Suspense fallback={<div />}>
+          <Map coordinates={coordinates} />
+        </React.Suspense>
+      )}
     </S.MapWrapper>
   </S.InfoPanel>
 )
