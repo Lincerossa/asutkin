@@ -23,10 +23,13 @@ export const HeroWrapper = styled.div`
 
 
 
-export const MediaHeader = styled.div`
+export const HeroHeader = styled.div`
   position: absolute;
   bottom: 3rem;
+  left: 0;
+  right: 0;
 `
+
 
 export const Maintitle = styled.div`
   font-family: sans-serif;
