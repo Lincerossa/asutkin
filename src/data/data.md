@@ -29,6 +29,14 @@ routes:
         hidden: true
         componentIds: [Hero_crottoDangri, InfoPanel_crottoDangri, RichText_crottoDangri, ListOfImages_crottoDangri ]
 
+      - slug: /sils-baselgia
+        label: Sils Baselgia
+        metaTitle: Sils Baselgia
+        metaDescription: Sils Baselgia descrizione
+        metaImage: ""
+        hidden: true
+        componentIds: [Hero_silsBaselgia, InfoPanel_silsBaselgia, RichText_silsBaselgia, ListOfImages_silsBaselgia ]
+
 
 components:
   - id: Hero_homepage
@@ -62,6 +70,13 @@ components:
         content: Passeggiata tranquilla per sgranchirsi le gambe
         image:
           src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590593962/08.03.2020/IMG_20200308_161922_b19byh.jpg
+      - slug: /escursioni/sils-baselgia
+        supertitle: "29.09.2019"
+        title: Sils Baselgia (Svizzera)
+        tags: [ 🏔Passo Maloja, ⌛︎4h, ⇡ 300m ]
+        content: Bellissima passeggiata panoramica, con scorci
+        image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590593962/08.03.2020/IMG_20200308_161922_b19byh.jpg
 
 
   - id: Hero_alpeGranda
@@ -77,6 +92,13 @@ components:
     supertitle: "08.03.2020"
     title: Crotto Dangri
     subtitle: Passeggiata tranquilla per sgranchirsi le gambe
+
+  - id: Hero_silsBaselgia
+    image: 
+      src: https://res.cloudinary.com/dmgymopan/image/upload/q_auto:low/v1590595353/29.09.2019/IMG_20190929_152453_d7p67b.jpg
+    supertitle: "29.09.2019"
+    title: Sils Baselgia
+    subtitle: Bellissima passeggiata panoramica
 
   - id: InfoPanel_alpeGranda
     coordinates: [9.658833617, 46.2068017]
@@ -97,6 +119,7 @@ components:
         title: Attezzatura
         text: Passeggino, e altra roba
 
+
   - id: InfoPanel_crottoDangri
     coordinates: [9.3072946, 46.1732255]
     wrapper: large
@@ -116,6 +139,24 @@ components:
         title: Attezzatura
         text: Passeggino, e altra roba
 
+  - id: InfoPanel_silsBaselgia
+    coordinates: [9.7528466, 46.428758]
+    wrapper: large
+    padder: big
+    background: #fafafafa
+    items: 
+      - icon: StepForwardOutlined
+        title: Partenza
+        text: Sils Baselgia - 2000m
+      - icon: StepBackwardOutlined
+        title: Arrivo
+        text: Sils Baselgia - 2000m (anello)
+      - icon: FieldTimeOutlined
+        title: tempo
+        text: 4h
+      - icon: ToolOutlined
+        title: Attezzatura
+        text: Passeggino, e altro
 
   - id: RichText_alpeGranda1
     text: <h2>Immagini della salita</h2><p>La salita è stata piuttosto semplice, anche con la bimba a bordo!</p>
@@ -124,6 +165,11 @@ components:
 
   - id: RichText_crottoDangri
     text: <h2>Qualche immagine</h2>
+    wrapper: large
+    padder: regular
+
+  - id: RichText_silsBaselgia
+    text: <h2>Immagini</h2> <p>Ecco alcune delle immagini degli scorci che ci hanno affascinato</p>
     wrapper: large
     padder: regular
 
@@ -162,6 +208,33 @@ components:
           src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590593962/08.03.2020/IMG_20200308_161330_haii91.jpg
           alt: " "
           description: Ecco Asiutkin
+
+  - id: ListOfImages_silsBaselgia 
+    wrapper: large
+    padder: regular
+    background: "#fafafafa"
+    items:
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590595340/29.09.2019/IMG_20190929_130846_o6sc75.jpg
+          alt: " "
+          description: Raggiungendo il passo, ecco una pausa ceffè vista cascate
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590595352/29.09.2019/IMG_20190929_152441_q0ugtd.jpg
+          alt: " "
+          description: Qualche scorcio
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590595352/29.09.2019/IMG_20190929_152441_q0ugtd.jpg
+          alt: " "
+          description: Qualche scorcio
+
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590595353/29.09.2019/IMG_20190929_152450_tc0ded.jpg
+          alt: " "
+          description: Qualche scorcio
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590595353/29.09.2019/IMG_20190929_153000_azyckz.jpg
+          alt: " "
+          description: Qualche scorcio
 
 
 
