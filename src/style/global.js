@@ -17,6 +17,7 @@ export default createGlobalStyle`
   h1 {
     font-size: 2.5rem;
     font-weight: 500;
+    color: ${theme.colors.primary};
     @media (min-width: 768px){
       font-size: 3rem;
     }
@@ -25,6 +26,7 @@ export default createGlobalStyle`
   h2 {
     font-size:1.5rem;
     font-weight: 500;
+    color: ${theme.colors.primary};
     @media (min-width: 768px){
       font-size: 2rem;
     }
@@ -33,6 +35,7 @@ export default createGlobalStyle`
   h3 {
     font-size: 1.125rem;
     font-weight: 500;
+    color: ${theme.colors.primary};
     @media (min-width: 768px){
       font-size: 1.5
     }
