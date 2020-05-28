@@ -16,5 +16,9 @@ deploy:
   on:
     branch: master
 
+notifications:
+  email:
+    - marcelloluatti@gmail.com
+
 cache:
   npm: false
