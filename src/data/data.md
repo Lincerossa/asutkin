@@ -76,7 +76,7 @@ components:
         tags: [ 🏔Passo Maloja, ⌛︎4h, ⇡ 300m ]
         content: Bellissima passeggiata panoramica, con scorci
         image:
-          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590593962/08.03.2020/IMG_20200308_161922_b19byh.jpg
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590595353/29.09.2019/IMG_20190929_152453_d7p67b.jpg
 
 
   - id: Hero_alpeGranda
