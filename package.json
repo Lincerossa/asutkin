@@ -48,8 +48,6 @@
     "develop": "gatsby develop --prefix-paths -H 0.0.0.0",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "build": "gatsby clean && gatsby build",
-    "publish:surge": "surge public --domain asutkin.surge.sh",
-    "publish": "npm run build && npm run publish:surge",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean && rm -rf node_modules/ && rm -rf package-lock.json && rm -rf build/ ",
