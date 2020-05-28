@@ -50,6 +50,7 @@
     "build": "gatsby clean && gatsby build",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "gatsby-clean": "gatsby clean",
     "clean": "gatsby clean && rm -rf node_modules/ && rm -rf package-lock.json && rm -rf build/ ",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
