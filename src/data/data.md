@@ -28,14 +28,20 @@ routes:
         metaImage: ""
         hidden: true
         componentIds: [Hero_crottoDangri, InfoPanel_crottoDangri, RichText_crottoDangri, ListOfImages_crottoDangri ]
-
-      - slug: /sils-baselgia
-        label: Sils Baselgia
-        metaTitle: Sils Baselgia
-        metaDescription: Sils Baselgia descrizione
+      - slug: /val-fex
+        label: Val Fex
+        metaTitle: Val Fex
+        metaDescription: Val Fex descrizione
         metaImage: ""
         hidden: true
-        componentIds: [Hero_silsBaselgia, InfoPanel_silsBaselgia, RichText_silsBaselgia, ListOfImages_silsBaselgia ]
+        componentIds: [Hero_valFex, InfoPanel_valFex, RichText_valFex, ListOfImages_valFex ]
+      - slug: /segna
+        label: Segna
+        metaTitle: Segna
+        metaDescription: Segna descrizione
+        metaImage: ""
+        hidden: true
+        componentIds: [Hero_segna, InfoPanel_segna, RichText_segna, ListOfImages_segna ]
 
 
 components:
@@ -63,6 +69,13 @@ components:
         content: Gita durante una bella giornata di domenica soleggiata
         image:
           src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590504923/24.05.2020/WhatsApp_Image_2020-05-24_at_18.55.00_thik3t.jpg
+      - slug: /escursioni/segna
+        supertitle: "17.05.2020"
+        title: Segna
+        tags: [ 🏔Lago di Como, ⌛︎2h, ⇡ 400m ]
+        content: Anello Gravedona - Segna - Domaso
+        image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590673836/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.09_4_o0fxhl.jpg
       - slug: /escursioni/crotto-dangri
         supertitle: "08.03.2020"
         title: Crotto Dangri
@@ -70,9 +83,9 @@ components:
         content: Passeggiata tranquilla per sgranchirsi le gambe
         image:
           src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590593962/08.03.2020/IMG_20200308_161922_b19byh.jpg
-      - slug: /escursioni/sils-baselgia
+      - slug: /escursioni/val-fex
         supertitle: "29.09.2019"
-        title: Sils Baselgia (Svizzera)
+        title: Val Fex (Svizzera)
         tags: [ 🏔Passo Maloja, ⌛︎4h, ⇡ 300m ]
         content: Bellissima passeggiata panoramica, con scorci
         image:
@@ -86,6 +99,13 @@ components:
     title: Rifugio Alpe Granda
     subtitle: Bel paesaggio in una bella giornata di sole
   
+  - id: Hero_segna
+    image: 
+      src: https://res.cloudinary.com/dmgymopan/image/upload/q_auto:low/v1590673836/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.09_4_o0fxhl.jpg
+    supertitle: "17.05.2020"
+    title: Segna
+    subtitle: Anello Gravedona - Segna - Domaso
+  
   - id: Hero_crottoDangri
     image: 
       src: https://res.cloudinary.com/dmgymopan/image/upload/q_auto:low/v1590593962/08.03.2020/IMG_20200308_161922_b19byh.jpg
@@ -93,11 +113,11 @@ components:
     title: Crotto Dangri
     subtitle: Passeggiata tranquilla per sgranchirsi le gambe
 
-  - id: Hero_silsBaselgia
+  - id: Hero_valFex
     image: 
       src: https://res.cloudinary.com/dmgymopan/image/upload/q_auto:low/v1590595353/29.09.2019/IMG_20190929_152453_d7p67b.jpg
     supertitle: "29.09.2019"
-    title: Sils Baselgia
+    title: Val Fex
     subtitle: Bellissima passeggiata panoramica
 
   - id: InfoPanel_alpeGranda
@@ -119,6 +139,27 @@ components:
         title: Attezzatura
         text: Passeggino, e altra roba
 
+  - id: InfoPanel_segna
+    coordinates: [9.3159086, 46.1524028]
+    wrapper: large
+    padder: big
+    background: #fafafafa
+    items: 
+      - icon: StepForwardOutlined
+        title: Partenza
+        text: Gravedona - 200m
+      - icon: StepBackwardOutlined
+        title: Tappa 1
+        text: Segna - 400m
+      - icon: StepBackwardOutlined
+        title: Tappa 2
+        text: Domaso - 200m
+      - icon: FieldTimeOutlined
+        title: tempo
+        text: 1.5h
+      - icon: ToolOutlined
+        title: Attezzatura
+        text: Passeggino, vestiti leggeri (esposizione a Sud), giacca a vento (ventoso dopo le 14.00)
 
   - id: InfoPanel_crottoDangri
     coordinates: [9.3072946, 46.1732255]
@@ -139,18 +180,18 @@ components:
         title: Attezzatura
         text: Passeggino, e altra roba
 
-  - id: InfoPanel_silsBaselgia
-    coordinates: [9.7528466, 46.428758]
+  - id: InfoPanel_valFex
+    coordinates: [9.7587346, 46.4194763]
     wrapper: large
     padder: big
     background: #fafafafa
     items: 
       - icon: StepForwardOutlined
         title: Partenza
-        text: Sils Baselgia - 2000m
+        text: Baselgia - 2000m
       - icon: StepBackwardOutlined
         title: Arrivo
-        text: Sils Baselgia - 2000m (anello)
+        text: Val Fex - 2300m
       - icon: FieldTimeOutlined
         title: tempo
         text: 4h
@@ -163,12 +204,17 @@ components:
     wrapper: large
     padder: regular
 
+  - id: RichText_segna
+    text: <h2>Qualche immagine</h2>
+    wrapper: large
+    padder: regular
+
   - id: RichText_crottoDangri
     text: <h2>Qualche immagine</h2>
     wrapper: large
     padder: regular
 
-  - id: RichText_silsBaselgia
+  - id: RichText_valFex
     text: <h2>Immagini</h2> <p>Ecco alcune delle immagini degli scorci che ci hanno affascinato</p>
     wrapper: large
     padder: regular
@@ -195,6 +241,36 @@ components:
           alt: " "
           description: Con le montagne tutte attorno
 
+
+  - id: ListOfImages_segna
+    wrapper: large
+    padder: regular
+    background: "#fafafafa"
+    items:
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/q_30/upload/v1590673836/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.10_wi2pck.jpg
+          alt: " "
+          description: Raggungendo Segna, incontriamo un bel bosco
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/q_30/upload/v1590673836/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.08_gba5nf.jpg
+          alt: " "
+          description: Qualche scorcio
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/q_30/upload/v1590673836/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.09_4_o0fxhl.jpg
+          alt: " "
+          description: Qualche scorcio
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/q_30/upload/v1590673838/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.09_d1oiq2.jpg
+          alt: " "
+          description: Qualche scorcio
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/q_30/upload/v1590673840/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.09_1_qp8pth.jpg
+          alt: " "
+          description: Sulla via del ritorno, raggiungiamo Domaso
+
+
+
+
   - id: ListOfImages_crottoDangri
     wrapper: large
     padder: regular
@@ -209,7 +285,7 @@ components:
           alt: " "
           description: Ecco Asiutkin
 
-  - id: ListOfImages_silsBaselgia 
+  - id: ListOfImages_valFex 
     wrapper: large
     padder: regular
     background: "#fafafafa"
@@ -226,7 +302,6 @@ components:
           src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590595352/29.09.2019/IMG_20190929_152441_q0ugtd.jpg
           alt: " "
           description: Qualche scorcio
-
       - image:
           src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590595353/29.09.2019/IMG_20190929_152450_tc0ded.jpg
           alt: " "
