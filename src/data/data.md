@@ -445,7 +445,7 @@ components:
           alt: " "
           description: Raggiungendo il passo, ecco una pausa ceffè vista cascate
       - image:
-          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590595352/29.09.2019/IMG_20190929_152441_q0ugtd.jpg
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590595353/29.09.2019/IMG_20190929_152453_d7p67b.jpg
           alt: " "
           description: Qualche scorcio
       - image:
