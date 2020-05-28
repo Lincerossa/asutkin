@@ -239,7 +239,7 @@ components:
 
 
   - id: RichText_alpeGranda2
-    text: <h2>L'arrivo</h2><p>Ed infine eccola, Asutkin</p>
+    text: <h2>L'arrivo</h2><p>Ed infine eccola, Asutkin!</p>
     wrapper: large
     padder: regular
 
