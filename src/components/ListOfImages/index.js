@@ -35,10 +35,11 @@ export default ({filtes, items}) => {
       footer={null}
       title={null}
       centered
+      height={typeof window !== "undefined" && window.innerHeight}
       width={typeof window !== "undefined" && (window.innerWidth > 768 ? window.innerWidth / 1.5 : window.innerWidth) }
     >
       <S.ModalInner>
-        <Slider {...{
+       { isModalVisible && <Slider {...{
           dots: true,
           arrows: true,
           autoplay: false,
@@ -47,7 +48,7 @@ export default ({filtes, items}) => {
           initialSlide: index
         }}>
           {items.map((item) => <Image {...item} />)}
-        </Slider>
+        </Slider>}
 
       </S.ModalInner>
     </Modal>
