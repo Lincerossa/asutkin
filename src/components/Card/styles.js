@@ -5,6 +5,8 @@ export const Card = styled.div`
   display: block;
   height: 100%;
   position: relative;
+  border-radius: 12px;
+  overflow: hidden;
   &:hover {
     cursor: pointer;
     box-shadow: 0 0 9.5px 0.5px rgba(0,0,0,.15)
