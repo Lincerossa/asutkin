@@ -104,7 +104,6 @@ export const MenuItem = styled.div`
 
 `
 
-
 export const Hamburger = styled.div`
   position: absolute;
   top: .7rem;
