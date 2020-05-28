@@ -18,7 +18,10 @@ deploy:
 
 notifications:
   email:
-    - marcelloluatti@gmail.com
+    recipients:
+      - marcelloluatti@gmail.com
+    on_success: always
+    on_failure: always
 
 cache:
   npm: false
