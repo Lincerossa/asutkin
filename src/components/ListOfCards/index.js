@@ -11,7 +11,7 @@ export default ({filtes, items}) => {
   
   return (<>
   <List columns={3}>
-    {items.map(item => <Link to={item.slug}> <Card {...item} /></Link>)}
+    {items.map(item => <Link to={item.slug} disabled={!item.slug}> <Card {...item} /></Link>)}
   </List>
   </>
   )
