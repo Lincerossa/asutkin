@@ -1,0 +1,21 @@
+language: node_js
+
+node_js:
+  - "12"
+
+install:
+  - brew install node
+  - npm install
+
+script: npm run build
+
+deploy:
+  provider: surge
+  project: ./public/
+  domain: asutkin-travis.surge.sh
+  skip_cleanup: true
+  on:
+    branch: master
+
+cache:
+  npm: false
