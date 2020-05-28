@@ -28,13 +28,13 @@ routes:
         metaImage: ""
         hidden: true
         componentIds: [Hero_crottoDangri, InfoPanel_crottoDangri, RichText_crottoDangri, ListOfImages_crottoDangri ]
-      - slug: /val-fex
-        label: Val Fex
-        metaTitle: Val Fex
-        metaDescription: Val Fex descrizione
+      - slug: /isola-bregaglia
+        label: Isola - Bregaglia
+        metaTitle: Isola - Bregaglia
+        metaDescription: Isola - Bregaglia descrizione
         metaImage: ""
         hidden: true
-        componentIds: [Hero_valFex, InfoPanel_valFex, RichText_valFex, ListOfImages_valFex ]
+        componentIds: [Hero_isolaBregaglia, InfoPanel_isolaBregaglia, RichText_isolaBregaglia, ListOfImages_isolaBregaglia ]
       - slug: /segna
         label: Segna
         metaTitle: Segna
@@ -49,6 +49,13 @@ routes:
         metaImage: ""
         hidden: true
         componentIds: [Hero_pianiDiGembro, InfoPanel_pianiDiGembro, RichText_pianiDiGembro, ListOfImages_pianiDiGembro ]
+      - slug: /lagh-da-cavloc
+        label: Lägh da Cavloc
+        metaTitle: Lägh da Cavloc
+        metaDescription: Lägh da Cavloc descrizione
+        metaImage: ""
+        hidden: true
+        componentIds: [Hero_laghDaCavloc, InfoPanel_laghDaCavloc, RichText_laghDaCavloc, ListOfImages_laghDaCavloc ]
 
 
 components:
@@ -61,8 +68,8 @@ components:
     image: 
       src: https://res.cloudinary.com/dmgymopan/image/upload/q_auto:low/v1590504923/24.05.2020/WhatsApp_Image_2020-05-24_at_18.55.00_thik3t.jpg
   - id: RichText_escursioni
-    text: <p>Di seguito le nostre escursioni</p>
-    wrapper: regular
+    text: <h2>Di seguito le nostre escursioni</h2><p>Il Lago di Como e la Valtellina sono le nostre mete preferite!</p>
+    wrapper: large
     padder: regular
   - id: ListOfCards_escursioni
     wrapper: large
@@ -97,13 +104,20 @@ components:
         content: Passeggiata tranquilla per sgranchirsi le gambe
         image:
           src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590593962/08.03.2020/IMG_20200308_161922_b19byh.jpg
-      - slug: /escursioni/val-fex
+      - slug: /escursioni/isola-bregaglia
         supertitle: "29.09.2019"
-        title: Val Fex (Svizzera)
-        tags: [ 🏔Passo Maloja, ⌛︎4h, ⇡ 300m ]
+        title: Isola - Bregaglia (Svizzera)
+        tags: [ 🏔Passo Maloja, ⌛︎4h, ⇡ 50m ]
         content: Bellissima passeggiata panoramica, con scorci
         image:
           src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590595353/29.09.2019/IMG_20190929_152453_d7p67b.jpg
+      - slug: /escursioni/lagh-da-cavloc
+        supertitle: "07.09.2019"
+        title: Lägh da Cavloc (Svizzera)
+        tags: [ 🏔Passo Maloja, ⌛︎3h, ⇡ 200m ]
+        content: Bellissima passeggiata in mezzo ai boschi, alle montagne e con meta un lago alpino
+        image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590700640/07.09.2019/WhatsApp_Image_2020-05-28_at_21.46.59_spwnze.jpg
 
 
   - id: Hero_alpeGranda
@@ -134,12 +148,21 @@ components:
     title: Crotto Dangri
     subtitle: Passeggiata tranquilla per sgranchirsi le gambe
 
-  - id: Hero_valFex
+  - id: Hero_isolaBregaglia
     image: 
       src: https://res.cloudinary.com/dmgymopan/image/upload/q_auto:low/v1590595353/29.09.2019/IMG_20190929_152453_d7p67b.jpg
     supertitle: "29.09.2019"
-    title: Val Fex
+    title: Isola - Bregaglia
     subtitle: Bellissima passeggiata panoramica
+
+  - id: Hero_laghDaCavloc
+    image: 
+      src: https://res.cloudinary.com/dmgymopan/image/upload/q_auto:low/v1590700640/07.09.2019/WhatsApp_Image_2020-05-28_at_21.46.59_spwnze.jpg
+    supertitle: "07.09.2019"
+    title: Lägh da Cavloc (Svizzera)
+    subtitle: Bellissima passeggiata in mezzo ai boschi, alle montagne e con meta un lago alpino
+
+
 
   - id: InfoPanel_alpeGranda
     coordinates: [9.658833617, 46.2068017]
@@ -154,7 +177,7 @@ components:
         title: Arrivo
         text: Alpe Granda - 1750m
       - icon: FieldTimeOutlined
-        title: tempo
+        title: Tempo
         text: 2h
       - icon: ToolOutlined
         title: Attezzatura
@@ -176,7 +199,7 @@ components:
         title: Tappa 2
         text: Domaso - 200m
       - icon: FieldTimeOutlined
-        title: tempo
+        title: Tempo
         text: 1.5h
       - icon: ToolOutlined
         title: Attezzatura
@@ -195,7 +218,7 @@ components:
         title: Anello attorno alla riserva
         text: Domaso - 1450m
       - icon: FieldTimeOutlined
-        title: tempo
+        title: Tempo
         text: 3h
       - icon: ToolOutlined
         title: Attezzatura
@@ -215,13 +238,13 @@ components:
         title: Arrivo
         text: Crotto Dangri - 650m
       - icon: FieldTimeOutlined
-        title: tempo
+        title: Tempo
         text: 1h30min
       - icon: ToolOutlined
         title: Attezzatura
         text: Passeggino, e altra roba
 
-  - id: InfoPanel_valFex
+  - id: InfoPanel_isolaBregaglia
     coordinates: [9.7587346, 46.4194763]
     wrapper: large
     padder: big
@@ -232,13 +255,37 @@ components:
         text: Baselgia - 2000m
       - icon: StepBackwardOutlined
         title: Arrivo
-        text: Val Fex - 2300m
+        text: Isola - Bregaglia - 2050m
       - icon: FieldTimeOutlined
-        title: tempo
+        title: Tempo
         text: 4h
       - icon: ToolOutlined
         title: Attezzatura
         text: Passeggino, e altro
+
+  - id: InfoPanel_laghDaCavloc
+    coordinates: [9.7072191, 46.3798636]
+    wrapper: large
+    padder: big
+    background: #fafafafa
+    items: 
+      - icon: StepForwardOutlined
+        title: Partenza
+        text: Baselgia - 2000m
+      - icon: StepBackwardOutlined
+        title: Arrivo
+        text: InfoPanel_laghDaCavloc - 2200m
+      - icon: FieldTimeOutlined
+        title: Tempo
+        text: 3h
+      - icon: ToolOutlined
+        title: Attezzatura
+        text: Scarponi, impermeabile
+
+
+
+
+
 
   - id: RichText_alpeGranda1
     text: <h2>Immagini della salita</h2><p>La salita è stata piuttosto semplice, anche con la bimba a bordo!</p>
@@ -260,7 +307,12 @@ components:
     wrapper: large
     padder: regular
 
-  - id: RichText_valFex
+  - id: RichText_isolaBregaglia
+    text: <h2>Immagini</h2> <p>Ecco alcune delle immagini degli scorci che ci hanno affascinato</p>
+    wrapper: large
+    padder: regular
+
+  - id: RichText_laghDaCavloc
     text: <h2>Immagini</h2> <p>Ecco alcune delle immagini degli scorci che ci hanno affascinato</p>
     wrapper: large
     padder: regular
@@ -383,7 +435,7 @@ components:
           alt: " "
           description: Ecco Asiutkin
 
-  - id: ListOfImages_valFex 
+  - id: ListOfImages_isolaBregaglia 
     wrapper: large
     padder: regular
     background: "#fafafafa"
@@ -408,6 +460,70 @@ components:
           src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590595353/29.09.2019/IMG_20190929_153000_azyckz.jpg
           alt: " "
           description: Qualche scorcio
+
+  - id: ListOfImages_laghDaCavloc
+    wrapper: large
+    padder: regular
+    background: "#fafafafa"
+    items:
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590700640/07.09.2019/WhatsApp_Image_2020-05-28_at_21.46.50_w3wmxc.jpg
+          alt: " "
+          description: Appena lasciata la macchina in zona Passo del Maloja, la vista delle montagne è subito eccezionale
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590700656/07.09.2019/WhatsApp_Image_2020-05-28_at_21.47.08_xqrvt3.jpg
+          alt: " "
+          description: Lungo la salita, il versante aldilà della valle è molto di impatto
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590700649/07.09.2019/WhatsApp_Image_2020-05-28_at_21.47.09_dybodp.jpg
+          alt: " "
+          description: Si prosegue lungo la valle
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590700656/07.09.2019/WhatsApp_Image_2020-05-28_at_21.47.03_ut2wdb.jpg
+          alt: " "
+          description: Immagini del lago
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590700656/07.09.2019/WhatsApp_Image_2020-05-28_at_21.47.04_lpxjcg.jpg
+          alt: " "
+          description: C'è molto vento!
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590700653/07.09.2019/WhatsApp_Image_2020-05-28_at_21.46.53_pfsnmn.jpg
+          alt: " "
+          description: Immagini del lago
+
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590700647/07.09.2019/WhatsApp_Image_2020-05-28_at_21.47.01_ypzggc.jpg
+          alt: " "
+          description: Immagini del lago
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590700642/07.09.2019/WhatsApp_Image_2020-05-28_at_21.47.05_lzaah4.jpg
+          alt: " "
+          description: Immagini del lago
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590700640/07.09.2019/WhatsApp_Image_2020-05-28_at_21.46.59_spwnze.jpg
+          alt: " "
+          description: Immagini del lago
+
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590700640/07.09.2019/WhatsApp_Image_2020-05-28_at_21.47.00_c09gpx.jpg
+          alt: " "
+          description: Immagini del lago
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590700639/07.09.2019/WhatsApp_Image_2020-05-28_at_21.46.54_novhek.jpg
+          alt: " "
+          description: Immagini del lago
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590700638/07.09.2019/WhatsApp_Image_2020-05-28_at_21.46.52_ql4bwp.jpg
+          alt: " "
+          description: Immagini del lago
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590700633/07.09.2019/WhatsApp_Image_2020-05-28_at_21.46.56_vdt7lz.jpg
+          alt: " "
+          description: Immagini del lago
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590700633/07.09.2019/WhatsApp_Image_2020-05-28_at_21.46.55_bs8acv.jpg
+          alt: " "
+          description: Immagini del lago
 
 
 
