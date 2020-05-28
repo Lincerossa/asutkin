@@ -248,23 +248,23 @@ components:
     background: "#fafafafa"
     items:
       - image:
-          src: https://res.cloudinary.com/dmgymopan/image/q_30/upload/v1590673836/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.10_wi2pck.jpg
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590673836/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.10_wi2pck.jpg
           alt: " "
           description: Raggungendo Segna, incontriamo un bel bosco
       - image:
-          src: https://res.cloudinary.com/dmgymopan/image/q_30/upload/v1590673836/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.08_gba5nf.jpg
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590673836/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.08_gba5nf.jpg
           alt: " "
           description: Qualche scorcio
       - image:
-          src: https://res.cloudinary.com/dmgymopan/image/q_30/upload/v1590673836/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.09_4_o0fxhl.jpg
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590673836/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.09_4_o0fxhl.jpg
           alt: " "
           description: Qualche scorcio
       - image:
-          src: https://res.cloudinary.com/dmgymopan/image/q_30/upload/v1590673838/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.09_d1oiq2.jpg
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590673838/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.09_d1oiq2.jpg
           alt: " "
           description: Qualche scorcio
       - image:
-          src: https://res.cloudinary.com/dmgymopan/image/q_30/upload/v1590673840/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.09_1_qp8pth.jpg
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590673840/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.09_1_qp8pth.jpg
           alt: " "
           description: Sulla via del ritorno, raggiungiamo Domaso
 
