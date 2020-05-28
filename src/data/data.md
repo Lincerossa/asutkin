@@ -42,6 +42,13 @@ routes:
         metaImage: ""
         hidden: true
         componentIds: [Hero_segna, InfoPanel_segna, RichText_segna, ListOfImages_segna ]
+      - slug: /piani-di-gembro
+        label: Piani di Gemmbro
+        metaTitle: Piani di Gemmbro
+        metaDescription: Piani di Gemmbro descrizione
+        metaImage: ""
+        hidden: true
+        componentIds: [Hero_pianiDiGembro, InfoPanel_pianiDiGembro, RichText_pianiDiGembro, ListOfImages_pianiDiGembro ]
 
 
 components:
@@ -76,6 +83,13 @@ components:
         content: Anello Gravedona - Segna - Domaso
         image:
           src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590673836/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.09_4_o0fxhl.jpg
+      - slug: /escursioni/piani-di-gembro
+        supertitle: "09.05.2020"
+        title: Piani di Gembro (Aprica)
+        tags: [ 🏔Valtellina, ⌛︎3h, ⇡ 100m ]
+        content: Anello nella Riserva naturale dei Piani di Gembro
+        image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590698934/09.05.2020/WhatsApp_Image_2020-05-28_at_21.26.27_i5ar4c.jpg
       - slug: /escursioni/crotto-dangri
         supertitle: "08.03.2020"
         title: Crotto Dangri
@@ -105,6 +119,13 @@ components:
     supertitle: "17.05.2020"
     title: Segna
     subtitle: Anello Gravedona - Segna - Domaso
+  
+  - id: Hero_pianiDiGembro
+    image: 
+      src: https://res.cloudinary.com/dmgymopan/image/upload/q_auto:low/v1590698934/09.05.2020/WhatsApp_Image_2020-05-28_at_21.26.27_i5ar4c.jpg
+    supertitle: "09.05.2020"
+    title: Piani di Gembro (Aprica)
+    subtitle: Anello attorno alla riserva dei Piani di Gembro
   
   - id: Hero_crottoDangri
     image: 
@@ -161,6 +182,26 @@ components:
         title: Attezzatura
         text: Passeggino, vestiti leggeri (esposizione a Sud), giacca a vento (ventoso dopo le 14.00)
 
+  - id: InfoPanel_pianiDiGembro 
+    coordinates: [10.1604976, 46.161449]
+    wrapper: large
+    padder: big
+    background: #fafafafa
+    items: 
+      - icon: StepForwardOutlined
+        title: Partenza
+        text: Piani di Gembro, al Ristorante Albergo le Betulle - 1350m
+      - icon: StepBackwardOutlined
+        title: Anello attorno alla riserva
+        text: Domaso - 1450m
+      - icon: FieldTimeOutlined
+        title: tempo
+        text: 3h
+      - icon: ToolOutlined
+        title: Attezzatura
+        text: Scarponi (terreno disconnesso), racchette (sali e scendi scivoloso)
+
+
   - id: InfoPanel_crottoDangri
     coordinates: [9.3072946, 46.1732255]
     wrapper: large
@@ -209,6 +250,11 @@ components:
     wrapper: large
     padder: regular
 
+  - id: RichText_pianiDiGembro
+    text: <h2>Qualche immagine</h2>
+    wrapper: large
+    padder: regular
+
   - id: RichText_crottoDangri
     text: <h2>Qualche immagine</h2>
     wrapper: large
@@ -240,6 +286,14 @@ components:
           src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590504926/24.05.2020/WhatsApp_Image_2020-05-24_at_18.54.26_ufvudu.jpg
           alt: " "
           description: Con le montagne tutte attorno
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590695769/24.05.2020/WhatsApp_Image_2020-05-28_at_21.21.36_ybussn.jpg
+          alt: " "
+          description: Una vecchia cascina
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590695769/24.05.2020/WhatsApp_Image_2020-05-28_at_21.21.19_qvyjuo.jpg
+          alt: " "
+          description: Che indica la via per il rifugio
 
 
   - id: ListOfImages_segna
@@ -264,12 +318,56 @@ components:
           alt: " "
           description: Qualche scorcio
       - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590696156/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.09_3_cc5osy.jpg
+          alt: " "
+          description: Con qualche cascata
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590696156/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.09_5_onpxqy.jpg
+          alt: " "
+          description: Salendo, usciamo dal bosco
+      - image:
           src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590673840/17.05.2020/WhatsApp_Image_2020-05-28_at_15.47.09_1_qp8pth.jpg
           alt: " "
           description: Sulla via del ritorno, raggiungiamo Domaso
+  
+  - id: ListOfImages_pianiDiGembro
+    wrapper: large
+    padder: regular
+    background: "#fafafafa"
+    items:
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590698935/09.05.2020/WhatsApp_Image_2020-05-28_at_21.26.47_gd8avg.jpg
+          alt: " "
+          description: Entrando nel bosco
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/v1590698939/09.05.2020/WhatsApp_Image_2020-05-28_at_21.27.22_lapp8a.jpg
+          alt: " "
+          description: Qualche scorcio
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590698935/09.05.2020/WhatsApp_Image_2020-05-28_at_21.24.57_d5wzfl.jpg
+          alt: " "
+          description: Qualche scorcio
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590698939/09.05.2020/WhatsApp_Image_2020-05-28_at_21.24.26_qpu6qi.jpg
+          alt: " "
+          description: Qualche scorcio
 
-
-
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590698934/09.05.2020/WhatsApp_Image_2020-05-28_at_21.26.27_i5ar4c.jpg
+          alt: " "
+          description: Ecco il prato finale
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590698960/09.05.2020/WhatsApp_Image_2020-05-28_at_21.46.44_iqayp4.jpg
+          alt: " "
+          description: Con qualche fiorellino
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590698943/09.05.2020/WhatsApp_Image_2020-05-28_at_21.25.26_oixs9v.jpg
+          alt: " "
+          description: Con qualche fiorellino
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590698934/09.05.2020/WhatsApp_Image_2020-05-28_at_21.25.56_ftjblp.jpg
+          alt: " "
+          description: Il primo picnic di Asutkin
 
   - id: ListOfImages_crottoDangri
     wrapper: large
