@@ -31,7 +31,7 @@
     "zustand": "^2.2.3"
   },
   "devDependencies": {
-    "@babel/compat-data": "7.9.0",
+    "@babel/compat-data": "7.10.1",
     "eslint-config-react-app": "^5.1.0",
     "prettier": "^2.0.5"
   },
