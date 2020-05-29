@@ -1,17 +1,15 @@
 {
-  "name": "lincerossa",
+  "name": "asutkin",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.0.1",
   "author": "Marcello Luatti <marcelloluatti@gmail.com>",
   "dependencies": {
     "@ant-design/icons": "^4.1.0",
     "antd": "^4.2.5",
     "babel-plugin-styled-components": "^1.10.6",
-    "debounce": "^1.2.0",
     "gatsby": "^2.18.12",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-manifest": "^2.2.31",
-    "gatsby-plugin-offline": "^3.0.27",
     "gatsby-plugin-react-helmet": "^3.1.16",
     "gatsby-plugin-sharp": "^2.3.5",
     "gatsby-plugin-styled-components": "^3.1.18",
@@ -25,14 +23,11 @@
     "react-helmet": "^5.2.1",
     "react-lazy-images": "^1.1.0",
     "react-mapbox-gl": "^4.8.6",
-    "react-particles-js": "^2.7.0",
-    "react-player": "^1.15.2",
     "react-sizeme": "^2.6.12",
     "react-slick": "^0.25.2",
     "react-visibility-sensor": "^5.1.1",
     "styled-components": "^5.0.0",
     "trim-html": "^0.1.9",
-    "yup": "^0.28.1",
     "zustand": "^2.2.3"
   },
   "devDependencies": {
@@ -40,9 +35,6 @@
     "eslint-config-react-app": "^5.1.0",
     "prettier": "^1.19.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop --prefix-paths -H 0.0.0.0",
@@ -50,15 +42,7 @@
     "build": "gatsby clean && gatsby build",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "gatsby-clean": "gatsby clean",
-    "clean": "gatsby clean && rm -rf node_modules/ && rm -rf package-lock.json && rm -rf build/ ",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "gatsby:clean": "gatsby clean",
+    "tabularasa": "gatsby clean && rm -rf node_modules/ && rm -rf package-lock.json && rm -rf build/ "
   }
 }
