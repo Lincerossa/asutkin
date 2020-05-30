@@ -118,14 +118,14 @@ components:
         tags: [ 🏔Lago di Como, ⌛︎1h, ⇡ 100m ]
         content: Passeggiata tranquilla per sgranchirsi le gambe
         image:
-          src: https://res.cloudinary.com/dmgymopan/image/upload/q_20/v1590593962/08.03.2020/IMG_20200308_161922_b19byh.jpg
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_10/v1590593962/08.03.2020/IMG_20200308_161922_b19byh.jpg
       - slug: /escursioni/isola-bregaglia
         supertitle: "29.09.2019"
         title: Isola - Bregaglia (Svizzera)
         tags: [ 🏔Passo Maloja, ⌛︎4h, ⇡ 50m ]
         content: Bellissima passeggiata panoramica, con scorci
         image:
-          src: https://res.cloudinary.com/dmgymopan/image/upload/q_20/v1590595353/29.09.2019/IMG_20190929_152453_d7p67b.jpg
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_10/v1590595353/29.09.2019/IMG_20190929_152453_d7p67b.jpg
       - slug: /escursioni/lagh-da-cavloc
         supertitle: "07.09.2019"
         title: Lägh da Cavloc (Svizzera)
