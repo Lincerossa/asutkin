@@ -41,7 +41,10 @@ exports.createPages = ({ actions, graphql }) => {
                 image {
                   src
                 }
-                coordinates
+                listOfPoints {
+                  coordinates
+                  label
+                }
 
                 items {
                   slug
