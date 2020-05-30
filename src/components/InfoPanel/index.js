@@ -8,9 +8,7 @@ const Map = React.lazy(() =>
 
 
 
-
-
-const InfoPanel = ({ coordinates, items }) => (
+const InfoPanel = ({ listOfPoints, items }) => (
   <S.InfoPanel>
     <S.ItemsWrapper>
       {
@@ -33,7 +31,7 @@ const InfoPanel = ({ coordinates, items }) => (
     <S.MapWrapper>
       {typeof window !== "undefined" && (
         <React.Suspense fallback={<div />}>
-          <Map coordinates={coordinates} />
+          <Map listOfPoints={listOfPoints} />
         </React.Suspense>
       )}
     </S.MapWrapper>

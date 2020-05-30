@@ -187,7 +187,11 @@ components:
 
 
   - id: InfoPanel_pescedo
-    coordinates: [9.3805081, 46.2100569]
+    listOfPoints:
+      - coordinates: [9.3858402, 46.1934241]
+        label: partenza
+      - coordinates: [9.3805081, 46.2100569]
+        label: arrivo
     wrapper: large
     padder: big
     background: #fafafafa
@@ -206,7 +210,9 @@ components:
         text: Scarponi, giacca a vento (molto ventoso), vestiti di ricambio (pioggia facile qui)
 
   - id: InfoPanel_alpeGranda
-    coordinates: [9.658833617, 46.2068017]
+    listOfPoints:
+      - coordinates: [9.658833617, 46.2068017]
+        label: partenza
     wrapper: large
     padder: big
     background: #fafafafa
@@ -225,7 +231,9 @@ components:
         text: Passeggino, e altra roba
 
   - id: InfoPanel_segna
-    coordinates: [9.3159086, 46.1524028]
+    listOfPoints:
+      - coordinates: [9.3159086, 46.1524028]
+        label: partenza
     wrapper: large
     padder: big
     background: #fafafafa
@@ -247,7 +255,9 @@ components:
         text: Passeggino, vestiti leggeri (esposizione a Sud), giacca a vento (ventoso dopo le 14.00)
 
   - id: InfoPanel_pianiDiGembro 
-    coordinates: [10.1604976, 46.161449]
+    listOfPoints:
+      - coordinates: [10.1604976, 46.161449]
+        label: partenza
     wrapper: large
     padder: big
     background: #fafafafa
@@ -267,7 +277,9 @@ components:
 
 
   - id: InfoPanel_crottoDangri
-    coordinates: [9.3072946, 46.1732255]
+    listOfPoints:
+      - coordinates: [9.3072946, 46.1732255]
+        label: partenza
     wrapper: large
     padder: big
     background: #fafafafa
@@ -286,7 +298,9 @@ components:
         text: Passeggino, e altra roba
 
   - id: InfoPanel_isolaBregaglia
-    coordinates: [9.7587346, 46.4194763]
+    listOfPoints:
+      - coordinates: [9.7587346, 46.4194763]
+        label: partenza
     wrapper: large
     padder: big
     background: #fafafafa
@@ -305,7 +319,9 @@ components:
         text: Passeggino, e altro
 
   - id: InfoPanel_laghDaCavloc
-    coordinates: [9.7072191, 46.3798636]
+    listOfPoints:
+      - coordinates: [9.7072191, 46.3798636]
+        label: partenza
     wrapper: large
     padder: big
     background: #fafafafa
@@ -373,14 +389,13 @@ components:
           alt: " "
           description: La vista dal parcheggio. Dal piazzale della partenza, si lanciano con il parapendio
 
-
       - image:
-          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590867371/30.05.2020/WhatsApp_Image_2020-05-30_at_21.05.45_1_wi4zzg.jpg
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_20/v1590867371/30.05.2020/WhatsApp_Image_2020-05-30_at_21.05.45_1_wi4zzg.jpg
           alt: " "
           description: Salendo nel bosco
 
       - image:
-          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590867370/30.05.2020/WhatsApp_Image_2020-05-30_at_21.05.45_3_kqucfn.jpg
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_20/v1590867370/30.05.2020/WhatsApp_Image_2020-05-30_at_21.05.45_3_kqucfn.jpg
           alt: " "
           description: Salendo nel bosco
 
@@ -400,7 +415,7 @@ components:
       - image:
           src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590867370/30.05.2020/WhatsApp_Image_2020-05-30_at_21.05.44_3_dun0ny.jpg
           alt: " "
-          description: Ecco Pescedo
+          description: Ecco Pescedo, siamo quasi arrivati all'Alpe, ma si è messo a piovere e siamo dovuti rientrare
       - image:
           src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590867368/30.05.2020/WhatsApp_Image_2020-05-30_at_21.05.44_1_klmb3s.jpg
           alt: " "
