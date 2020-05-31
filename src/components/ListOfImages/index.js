@@ -24,7 +24,7 @@ export default ({filtes, items}) => {
   <>
   
     <List columns={3}>
-      {items.map((item, index) => <S.ImageWrapper onClick={() => setIndex(index) }> <Image {...item} /></S.ImageWrapper>)}
+      {items.map((item, index) => <S.ImageWrapper key={item.image.src} onClick={() => setIndex(index) }> <Image {...item} /></S.ImageWrapper>)}
     </List>
 
     <Modal

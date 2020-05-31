@@ -15,7 +15,7 @@ const MyImage = ({ image }) => (
           src={
             imageState === ImageState.LoadSuccess
               ? imageProps.src
-              : imageProps.src
+              : imageProps.src // this will be the low resolution image
           }
           loading={imageState === ImageState.NotAsked || imageState === ImageState.Loading}
           success={imageState === ImageState.LoadSuccess}

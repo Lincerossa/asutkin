@@ -17,7 +17,7 @@ const InfoPanel = ({ listOfPoints, items }) => (
           const Icon = Icons[icon]
           
           return (
-            <S.Item>
+            <S.Item key={title}>
               <S.ItemTitle>{title}</S.ItemTitle>
               <S.ItemInner>
                 <S.ItemIconWrapper><Icon /></S.ItemIconWrapper>
