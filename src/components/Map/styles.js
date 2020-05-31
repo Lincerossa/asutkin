@@ -1,5 +1,10 @@
 import styled from 'styled-components'
 
+export const MapWrapper = styled.div`
+  border-radius: 5px;
+  overflow: hidden;
+
+` 
 export const Mark = styled.div`
   position: relative;
 
