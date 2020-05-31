@@ -4,14 +4,7 @@ import styled from 'styled-components'
 
 export const HeroWrapper = styled.div`
   position: relative;
-  &:before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
-  }
+
   img {
     display: block;
     width: 100%;
@@ -28,6 +21,7 @@ export const HeroHeader = styled.div`
   bottom: 3rem;
   left: 0;
   right: 0;
+  z-index:1;
 `
 
 
@@ -63,4 +57,5 @@ export const Title = styled.div`
 export const Subtitle = styled.div`
   text-transform: uppercase;
   color: white;
+  font-weight: 300;
 `

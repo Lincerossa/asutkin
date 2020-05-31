@@ -7,7 +7,7 @@ import TextDistortion from '../TextDistortion'
 
 const Hero = ({ image, maintitle, title, subtitle, supertitle }) => (
   <S.HeroWrapper>
-    <Image image={image} />
+    <Image image={image} hasShadow />
     {maintitle && <S.Maintitle><TextDistortion>{maintitle}</TextDistortion></S.Maintitle>}
     <S.HeroHeader>
       <Wrapper size="large">
