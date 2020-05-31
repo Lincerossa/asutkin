@@ -211,8 +211,10 @@ components:
 
   - id: InfoPanel_alpeGranda
     listOfPoints:
-      - coordinates: [9.658833617, 46.2068017]
+      - coordinates: [9.6685559, 46.1947322]
         label: partenza
+      - coordinates: [9.658833617, 46.2068017]
+        label: arrivo
     wrapper: large
     padder: big
     background: #fafafafa
@@ -232,8 +234,18 @@ components:
 
   - id: InfoPanel_segna
     listOfPoints:
-      - coordinates: [9.3159086, 46.1524028]
+      - coordinates: [9.305422, 46.1469994]
         label: partenza
+      - coordinates: [9.3110833, 46.1507683]
+        label: bivio
+      - coordinates: [9.3159086, 46.1524028]
+        label: arrivo
+      - coordinates: [9.324122, 46.1568478]
+        label: rientro
+      - coordinates: [9.3256124, 46.1507528]
+        label: rientro
+      - coordinates: [9.3086211, 46.1481445]
+        label: rientro
     wrapper: large
     padder: big
     background: #fafafafa
@@ -257,7 +269,7 @@ components:
   - id: InfoPanel_pianiDiGembro 
     listOfPoints:
       - coordinates: [10.1604976, 46.161449]
-        label: partenza
+        label: arrivo
     wrapper: large
     padder: big
     background: #fafafafa
@@ -279,7 +291,7 @@ components:
   - id: InfoPanel_crottoDangri
     listOfPoints:
       - coordinates: [9.3072946, 46.1732255]
-        label: partenza
+        label: arrivo
     wrapper: large
     padder: big
     background: #fafafafa
@@ -300,7 +312,7 @@ components:
   - id: InfoPanel_isolaBregaglia
     listOfPoints:
       - coordinates: [9.7587346, 46.4194763]
-        label: partenza
+        label: arrivo
     wrapper: large
     padder: big
     background: #fafafafa
@@ -321,7 +333,7 @@ components:
   - id: InfoPanel_laghDaCavloc
     listOfPoints:
       - coordinates: [9.7072191, 46.3798636]
-        label: partenza
+        label: arrivo
     wrapper: large
     padder: big
     background: #fafafafa
