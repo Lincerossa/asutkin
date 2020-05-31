@@ -19,12 +19,17 @@ export default ({filtes, items}) => {
     setIndex(null)
   }
 
+
+  function handleImageClick(index){
+    if(typeof window !== "undefined" && window.innerWidth > 768) setIndex(index)
+  }
+
   const isModalVisible = index === 0 || index
   return (
   <>
   
     <List columns={3}>
-      {items.map((item, index) => <S.ImageWrapper key={item.image.src} onClick={() => setIndex(index) }> <Image {...item} /></S.ImageWrapper>)}
+      {items.map((item, index) => <S.ImageWrapper key={item.image.src} onClick={() => handleImageClick(index) }> <Image {...item} /></S.ImageWrapper>)}
     </List>
 
     <Modal
