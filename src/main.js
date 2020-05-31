@@ -15,7 +15,7 @@ export default (props) => {
       const Component = id.split("_")[0]
       const C = Components[Component]
       return (
-        <MaybeWithBackground {...props}>
+        <MaybeWithBackground {...props} key={id}>
           <MaybeWithWrapper {...props}>
             <MaybeWithPadder {...props}>
               <C {...props} />

@@ -9,12 +9,26 @@ export const Image = styled.img`
   transition: all .25s;
   display: block;
   width: 100%;
+  height: 100%;
+  position:relative;
   ${props => props.loading && `
     filter: blur(5px) grayscale(40%);
   `} 
   ${props => props.success && `
     filter: auto;
   `} 
+
+`
+
+
+export const Shadow = styled.div`
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: radial-gradient(transparent, rgb(0,0,0,.2));
+  top: 0;
+  z-index: 1;
 
 `
 export const Description = styled.div`
