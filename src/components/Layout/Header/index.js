@@ -51,17 +51,8 @@ const Header = ({ routes, currentRoute, inverted }) => {
 
 
 Header.propTypes = {
-  pathPrefix: PropTypes.string.isRequired,
+  currentRoute: PropTypes.object.isRequired,
   inverted: PropTypes.bool.isRequired,
-  footer:  PropTypes.shape({ // this needs to be changed after the new md file of felix
-    languagesTitle: PropTypes.string.isRequired,
-    languages:  PropTypes.arrayOf(
-      PropTypes.shape({
-        slug: PropTypes.string.isRequired,
-        label: PropTypes.string.isRequired,
-        icon: PropTypes.string,
-    }))
-  }).isRequired,
   routes: PropTypes.arrayOf(
     PropTypes.shape({
       slug: PropTypes.string.isRequired,
