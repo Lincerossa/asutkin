@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { CloseOutlined,MenuOutlined } from '@ant-design/icons';
 import Wrapper from '../../Wrapper'
 import * as S from './styles'
-import Logo from './Logo'
+import Logo from '../Logo'
 import { useScrollDirection } from '../../../hooks'
 
 

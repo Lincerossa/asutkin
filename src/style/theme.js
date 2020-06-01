@@ -18,6 +18,10 @@ export default {
     blue: {
       primary: "#1890ff",
       secondary: "#40a9ff"
+    },
+    red: {
+      primary: "#ff0000",
+      secondary: "#ff4d4f"
     }
   }
 }
