@@ -11,7 +11,7 @@ const Card = ({ options = {}, image, supertitle, title, tags, content }) => {
   return(
     <S.Card>
       <S.MediaWrapper full={full}>
-        <Image image={image} />
+        <Image image={image} type="cover" />
       </S.MediaWrapper>
       
       <S.Description full={full}>
