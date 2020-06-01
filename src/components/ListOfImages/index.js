@@ -29,7 +29,7 @@ export default ({filtes, items}) => {
   <>
   
     <List columns={3}>
-      {items.map((item, index) => <S.ImageWrapper key={item.image.src} onClick={() => handleImageClick(index) }> <Image {...item} /></S.ImageWrapper>)}
+      {items.map((item, index) => <S.ListItem key={item.image.src} onClick={() => handleImageClick(index) }> <Image {...item} /></S.ListItem>)}
     </List>
 
     <Modal
@@ -41,9 +41,11 @@ export default ({filtes, items}) => {
       title={null}
       centered
       height={typeof window !== "undefined" && window.innerHeight}
-      width={typeof window !== "undefined" && (window.innerWidth > 768 ? window.innerWidth / 1.5 : window.innerWidth) }
+      width={typeof window !== "undefined" && window.innerWidth }
+      bodyStyle={{
+        height: "100vh",
+      }}
     >
-      <S.ModalInner>
        { isModalVisible && <Slider {...{
           dots: true,
           arrows: true,
@@ -52,10 +54,8 @@ export default ({filtes, items}) => {
           prevArrow: <LeftOutlined />,
           initialSlide: index
         }}>
-          {items.map((item) => <Image {...item} />)}
+          {items.map((item) => <S.Slide><Image {...item} /></S.Slide>)}
         </Slider>}
-
-      </S.ModalInner>
     </Modal>
   </>
   )

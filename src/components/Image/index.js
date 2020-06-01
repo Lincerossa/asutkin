@@ -4,8 +4,8 @@ import PropTypes from "prop-types"
 import * as S from './styles'
 
 
-const MyImage = ({ image, hasShadow }) => console.log({hasShadow}) || (
-  <S.ImageWrapper>
+const MyImage = ({ image, hasShadow, type }) => (
+  <>
     <LazyImageFull src={image.src} debounceDurationMs={500}>
       {({ imageProps, imageState, ref }) => (
         <>
@@ -13,6 +13,7 @@ const MyImage = ({ image, hasShadow }) => console.log({hasShadow}) || (
         <S.Image
           {...imageProps}
           loadEagerly
+          type={type}
           ref={ref}
           src={
             imageState === ImageState.LoadSuccess
@@ -31,7 +32,7 @@ const MyImage = ({ image, hasShadow }) => console.log({hasShadow}) || (
     </LazyImageFull>
     
     {image.description && <S.Description>{image.description}</S.Description>}
-  </S.ImageWrapper>
+  </>
 
 )
  
@@ -41,7 +42,8 @@ MyImage.propTypes = {
     src: PropTypes.string.isRequired,
     description: PropTypes.string,
   }),
-  hasShadow: PropTypes.bool
+  hasShadow: PropTypes.bool,
+  type: PropTypes.string
 }
 export default MyImage
 
