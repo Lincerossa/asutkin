@@ -1,15 +1,13 @@
 import styled from 'styled-components'
 
-
-export const ImageWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-`
 export const Image = styled.img`
   transition: all .25s;
   display: block;
   width: 100%;
   height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: ${props => props.type || "contain"};
   position:relative;
   ${props => props.loading && `
     filter: blur(5px) grayscale(40%);
@@ -17,6 +15,7 @@ export const Image = styled.img`
   ${props => props.success && `
     filter: auto;
   `} 
+  background-color: ${props => props.theme.colors.black.primary};
 
 `
 
