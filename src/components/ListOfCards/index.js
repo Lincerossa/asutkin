@@ -3,14 +3,14 @@ import {Link} from 'gatsby'
 
 import Card from '../Card'
 import List from '../List'
+import * as S from './styles'
 
-
-export default ({filtes, items}) => {
+export default ({items}) => {
 
   return (<>
-  <List columns={3}>
-    {items.map(item => <Link key={item.slug} to={item.slug} disabled={!item.slug}> <Card {...item} /></Link>)}
-  </List>
+    <List columns={3}>
+      {items.map(item => <Link key={item.slug} to={item.slug} disabled={!item.slug}> <S.ListItem> <Card {...item} /></S.ListItem></Link>)}
+    </List>
   </>
   )
 }

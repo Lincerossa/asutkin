@@ -79,27 +79,21 @@ export default createGlobalStyle`
   }
   
 
-
-
   .slick-slider {
     .slick-slide {
-    height: auto;
-  }
-  .slick-track {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: stretch;
-  }
+      height: auto;
+    }
+    .slick-track {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: stretch;
+    }
     .slick-arrow {
-      position: absolute;
+      position: absolute !important;
       top: 50%;
       transform: translate(0,-50%);
       z-index: 1;
-      display: none !important;
-      @media (min-width: 768px){
-        display: block !important;
-      }
     }
     .slick-prev{
       left: -1.5rem;
@@ -110,10 +104,16 @@ export default createGlobalStyle`
       width: 3rem;
       display: flex !important;
       align-items: center;
-      color: ${theme.colors.black.primary};;
+      color: ${theme.colors.black.primary};
       justify-content: center;
+            
+      &:active,
+      &:focus {
+        background: white;
+        color: ${theme.colors.black.primary};
+      }
       &:hover{
-        background: ${theme.colors.primary};;
+        background: ${theme.colors.primary};
         color: white;
       }
     }
@@ -127,9 +127,15 @@ export default createGlobalStyle`
       display: flex !important;
       align-items: center;
       justify-content: center;
-      color: ${theme.colors.black.primary};;
+      color: ${theme.colors.black.primary};
+      
+      &:active,
+      &:focus {
+        background: white;
+        color: ${theme.colors.black.primary};
+      }
       &:hover{
-        background: ${theme.colors.primary};;
+        background: ${theme.colors.primary};
         color: white;
       }
     }
@@ -138,5 +144,22 @@ export default createGlobalStyle`
     .slick-dots {
       padding: .5rem; 
     }
+  }
 
+  .ant-modal-close-x {
+    padding: 0;
+    background: white;
+    height: 3rem;
+    width: 3rem;
+
+    &:hover{
+      background: ${theme.colors.primary};
+      color: white;
+      cursor: pointer;
+    }
+
+    svg {
+      font-size: 1.25rem;
+    }
+  }
 `

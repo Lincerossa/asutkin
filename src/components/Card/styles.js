@@ -7,9 +7,10 @@ export const Card = styled.div`
   position: relative;
   border-radius: 12px;
   overflow: hidden;
+  transition: .4s all;
   &:hover {
-    cursor: pointer;
-    box-shadow: 0 0 9.5px 0.5px rgba(0,0,0,.15)
+    cursor: pointer !important;
+    box-shadow: 0 0 9.5px 3px rgba(0,0,0,.25)
   }
 `
 
@@ -31,7 +32,6 @@ export const MediaWrapper = styled.div`
    `&:before{
     content: "";
     position: absolute;
-    background: linear-gradient(to top,rgba(0,0,0,.75),transparent);
     bottom: 0;
     right: 0;
     left: 0;
