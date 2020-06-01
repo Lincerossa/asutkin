@@ -33,6 +33,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        id: 1836604,
+        sv: 6
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         "excerpt_separator": `<!-- end -->`
