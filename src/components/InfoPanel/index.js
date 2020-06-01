@@ -1,7 +1,9 @@
 import React from 'react'
 import * as S from './styles'
 import * as Icons from '@ant-design/icons';
-  
+
+import { isDesktop } from '../../utility'
+
 const Map = React.lazy(() =>
   import("../Map")
 )
@@ -29,7 +31,7 @@ const InfoPanel = ({ listOfPoints, items }) => (
       }
     </S.ItemsWrapper>
     <S.MapWrapper>
-      {typeof window !== "undefined" && (
+      {isDesktop && (
         <React.Suspense fallback={<div />}>
           <Map listOfPoints={listOfPoints} />
         </React.Suspense>
