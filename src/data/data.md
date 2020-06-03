@@ -69,7 +69,7 @@ components:
   - id: Hero_homepage
     maintitle: Asutkin
     image: 
-      src: https://res.cloudinary.com/dmgymopan/image/upload/q_auto:low/v1590508076/assets/Group_31_e2ynwa.png
+      src: https://res.cloudinary.com/dmgymopan/image/upload/v1591178104/Assets/Group_31_j9tc6r.png
   - id: Hero_escursioni
     title: Escursioni
     image: 
