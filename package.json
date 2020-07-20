@@ -31,7 +31,7 @@
     "zustand": "^2.2.3"
   },
   "devDependencies": {
-    "@babel/compat-data": "7.10.1",
+    "@babel/compat-data": "7.10.5",
     "@hot-loader/react-dom": "^16.13.0",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/commit-analyzer": "^8.0.1",
