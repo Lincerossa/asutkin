@@ -23,7 +23,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-lazy-images": "^1.1.0",
-    "react-mapbox-gl": "^4.8.6",
+    "react-mapbox-gl": "^5.0.0",
     "react-sizeme": "^2.6.12",
     "react-slick": "^0.26.1",
     "styled-components": "^5.0.0",
