@@ -35,7 +35,7 @@ export default ({items, visible, initialSlideIndex, handleReset}) => {
         prevArrow: <LeftOutlined />,
         initialSlide: initialSlideIndex
       }}>
-        {items.map((item) => <S.Slide><Image {...item} /></S.Slide>)}
+        {items.map((item) => <S.Slide key={item?.image?.src}><Image {...item} /></S.Slide>)}
       </Slider>}
   </Modal>)
 }
