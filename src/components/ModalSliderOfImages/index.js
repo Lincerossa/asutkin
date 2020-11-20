@@ -10,14 +10,13 @@ import Image from '../Image'
 import * as S from './styles'
 import { isDesktop } from '../../utility'
 
-export default ({items, visible, initialSlideIndex, handleReset}) => {
-
+export default ({items, initialSlideIndex, onClose}) => {
   return (
     <Modal
-      visible={visible}
+      visible
       mask
-      onCancel={handleReset}
-      onOk={handleReset}
+      onCancel={onClose}
+      onOk={onClose}
       footer={null}
       title={null}
       centered
@@ -27,7 +26,7 @@ export default ({items, visible, initialSlideIndex, handleReset}) => {
         height: "100vh",
       }}
     >
-     { visible && <Slider {...{
+     <Slider {...{
         dots: true,
         arrows: true,
         autoplay: false,
@@ -36,6 +35,6 @@ export default ({items, visible, initialSlideIndex, handleReset}) => {
         initialSlide: initialSlideIndex
       }}>
         {items.map((item) => <S.Slide key={item?.image?.src}><Image {...item} /></S.Slide>)}
-      </Slider>}
+      </Slider>
   </Modal>)
 }
