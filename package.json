@@ -49,10 +49,12 @@
       "@semantic-release/changelog",
       "@semantic-release/git"
     ],
-    "branches": ["master"]
+    "branches": [
+      "master"
+    ]
   },
   "scripts": {
-    "develop": "gatsby develop --prefix-paths -H 0.0.0.0",
+    "develop": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "build": "gatsby clean && gatsby build",
     "start": "npm run develop",
