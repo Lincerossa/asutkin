@@ -6,7 +6,7 @@ import * as S from './styles'
 const Card = ({ options = {}, image, supertitle, title, tags, content }) => {
 
   const { html } = content && trimHtml(content, { limit: 75 });
-  const { full= true } = options
+  const { full = true } = options
   
   return(
     <S.Card>
@@ -17,10 +17,10 @@ const Card = ({ options = {}, image, supertitle, title, tags, content }) => {
       <S.Description full={full}>
         <S.Supertitle>{supertitle}</S.Supertitle>
         <S.Title full={full}>{title}</S.Title>
-        { tags && tags.length > 0 &&
+        { tags?.length > 0 &&
           <S.TagsWrapper>
             {
-              tags.map(tag => <S.Tag>{tag}</S.Tag>)
+              tags.map(tag => <S.Tag key={tag}>{tag}</S.Tag>)
             }
           </S.TagsWrapper>
         }
