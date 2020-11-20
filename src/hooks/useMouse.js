@@ -1,20 +1,21 @@
 import { useState, useEffect} from 'react'
 import { isDesktop } from '../utility'
+const { MOUSEUP, MOUSEDOWN, MOUSEMOVE, MOUSEOUT } = global.constants
 
 function useMouse() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [mouseStatus, setMouseStatus] = useState(null)
 
   function handleMouseDown() {
-    setMouseStatus('mousedown')
+    setMouseStatus(MOUSEDOWN)
   }
 
   function handleMouseUp() {
-    setMouseStatus('mouseup')
+    setMouseStatus(MOUSEUP)
   }
   function handleMouseOut() {
     setMousePosition({ x: 0, y: 0 })
-    setMouseStatus('mouseup')
+    setMouseStatus(MOUSEUP)
   }
 
   function handleMouseMove(e) {
@@ -26,17 +27,17 @@ function useMouse() {
 
   useEffect(() => {
     if(isDesktop){
-      window.addEventListener('mousedown', handleMouseDown)
-      window.addEventListener('mousemove', handleMouseMove)
-      window.addEventListener('mouseup', handleMouseUp)
-      window.addEventListener('mouseout', handleMouseOut)
+      window.addEventListener(MOUSEDOWN, handleMouseDown)
+      window.addEventListener(MOUSEMOVE, handleMouseMove)
+      window.addEventListener(MOUSEUP, handleMouseUp)
+      window.addEventListener(MOUSEOUT, handleMouseOut)
     }
     return () => {
       if(isDesktop){
-        window.removeEventListener('mousedown', handleMouseDown)
-        window.removeEventListener('mouseup', handleMouseUp)
-        window.removeEventListener('mousemove', handleMouseMove)
-        window.removeEventListener('mouseout', handleMouseOut)
+        window.removeEventListener(MOUSEDOWN, handleMouseDown)
+        window.removeEventListener(MOUSEUP, handleMouseUp)
+        window.removeEventListener(MOUSEMOVE, handleMouseMove)
+        window.removeEventListener(MOUSEOUT, handleMouseOut)
       }
     }
   }, [])

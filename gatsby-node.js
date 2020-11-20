@@ -90,7 +90,7 @@ exports.createPages = ({ actions, graphql }) => {
       
       createPage({
         path: slug,
-        component: path.resolve("./src/main.js"),
+        component: path.resolve("./src/Main.js"),
         context: {
           data: {
             ...data.node.frontmatter,

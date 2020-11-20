@@ -1,5 +1,6 @@
 import React from "react"
 
+import './constants'
 import * as C from "./components"
 import * as M from './components/Maybe'
 
