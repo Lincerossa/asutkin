@@ -63,6 +63,13 @@ routes:
         metaImage: ""
         hidden: true
         componentIds: [Hero_laghDaCavloc, InfoPanel_laghDaCavloc, RichText_laghDaCavloc, ListOfImages_laghDaCavloc ]
+      - slug: /pian-di-spagna
+        label: Pian di Spagna
+        metaTitle: Pian di Spagna
+        metaDescription: Pian di Spagna descrizione
+        metaImage: ""
+        hidden: true
+        componentIds: [Hero_pianDiSpagna, InfoPanel_pianDiSpagna, RichText_pianDiSpagna, ListOfImages_pianDiSpagna ]
 
 
 components:
@@ -83,6 +90,13 @@ components:
     padder: regular
     background: "#fafafafa"
     items:
+      - slug: /escursioni/pian-di-spagna
+        supertitle: "06.06.2020"
+        title: Pian di Spagna
+        tags: [ 🏔Lago di Como, ⌛︎1h30min, ⇡ 0m ]
+        content: Escursione all'interno del Pian di Spagna
+        image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_20/v1605912646/06.06.2020/IMG_20200606_153109_iwjko3.jpg
       - slug: /escursioni/pescedo
         supertitle: "30.05.2020"
         title: Alpe Pescedo
@@ -134,6 +148,12 @@ components:
         image:
           src: https://res.cloudinary.com/dmgymopan/image/upload/q_20/v1590700640/07.09.2019/WhatsApp_Image_2020-05-28_at_21.46.59_spwnze.jpg
 
+  - id: Hero_pianDiSpagna
+    image: 
+      src: https://res.cloudinary.com/dmgymopan/image/upload/v1605912646/06.06.2020/IMG_20200606_153109_iwjko3.jpg
+    supertitle: "06.06.2020"
+    title: Pian di Spagna (Sorico)
+    subtitle: Un sabato di pioggia a spasso con Asutkin
 
   - id: Hero_pescedo
     image: 
@@ -183,6 +203,7 @@ components:
     supertitle: "07.09.2019"
     title: Lägh da Cavloc (Svizzera)
     subtitle: Bellissima passeggiata in mezzo ai boschi, alle montagne e con meta un lago alpino
+  
 
 
 
@@ -351,10 +372,37 @@ components:
         title: Attezzatura
         text: Scarponi, impermeabile
 
+  - id: InfoPanel_pianDiSpagna
+    listOfPoints:
+      - coordinates: [9.3808721, 46.1663583]
+        label: partenza
+      - coordinates: [9.3948019, 46.1581695]
+        label: arrivo
+    wrapper: large
+    padder: big
+    background: #fafafafa
+    items: 
+      - icon: StepForwardOutlined
+        title: Partenza
+        text: Parcheggio del ristorante Boschetto
+      - icon: StepBackwardOutlined
+        title: Arrivo
+        text: In mezzo al pian di Spagna
+      - icon: StepBackwardOutlined
+        title: Arrivo ideale
+        text: Foce dell'Adda
+      - icon: FieldTimeOutlined
+        title: Tempo
+        text: 1h45min (andatura passeggino)
+      - icon: ToolOutlined
+        title: Attezzatura
+        text: Scarpe da ginnastica, impermeabile, ombrello
 
 
-
-
+  - id: RichText_pianDiSpagna
+    text: <h2>Immagini</h2><p>Tutta la passeggiata si svolge all'interno del Pian di Spagna. Si incontrano allevamenti di bestiame, e cavalli</p>
+    wrapper: large
+    padder: regular
 
   - id: RichText_pescedo
     text: <h2>Immagini</h2><p>Si sale quasi sempre protetti dal bosco, ma a tratti la vista si apre sulla sinistra verso il Lago</p>
@@ -390,6 +438,56 @@ components:
     text: <h2>Immagini</h2> <p>Ecco alcune delle immagini degli scorci che ci hanno affascinato</p>
     wrapper: large
     padder: regular
+
+  - id: ListOfImages_pianDiSpagna
+    wrapper: large
+    padder: regular
+    background: "#fafafafa"
+    items:
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1605912646/06.06.2020/IMG_20200606_153109_iwjko3.jpg
+          alt: " "
+          description: Dopo aver lasciato il ristorante Boschetto, si attraversa un piccolo bosco. Dopo pochi minuti la vista si apre sul monte Legnone, e ci si ritrova immersi all interno del Pian di Spagna
+
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1605912664/06.06.2020/IMG_20200606_153211_o4j91t.jpg
+          alt: " "
+          description: proseguendo
+
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1605912666/06.06.2020/IMG_20200606_153301_eck3ks.jpg
+          alt: " "
+          description: proseguendo
+
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1605912683/06.06.2020/IMG_20200606_153034_l451gc.jpg
+          alt: " "
+          description: proseguendo
+
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1605912621/06.06.2020/IMG_20200606_162633_p8uhap.jpg
+          alt: " "
+          description: Alcuni scorci sui vasti prati a seguire
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1605912634/06.06.2020/IMG_20200606_164928_ii9yxk.jpg
+          alt: " "
+          description: scorci
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1605912614/06.06.2020/IMG_20200606_161240_qocj0l.jpg
+          alt: " "
+          description: scorci
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1605912633/06.06.2020/IMG_20200606_154336_ormlkz.jpg
+          alt: " "
+          description: scorci
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1605912633/06.06.2020/IMG_20200606_160144_wrhyh3.jpg
+          alt: " "
+          description: scorci
+      - image:
+          src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1605912628/06.06.2020/IMG_20200606_164741_kc9x6m.jpg
+          alt: " "
+          description: scorci
 
   - id: ListOfImages_pescedo
     wrapper: large
@@ -432,16 +530,6 @@ components:
           src: https://res.cloudinary.com/dmgymopan/image/upload/q_30/v1590867368/30.05.2020/WhatsApp_Image_2020-05-30_at_21.05.44_1_klmb3s.jpg
           alt: " "
           description: Al rientro, una piccola pausa 
-
-
-
-
-
-
-
-
-
-
 
 
   - id: ListOfImages_alpeGranda1
