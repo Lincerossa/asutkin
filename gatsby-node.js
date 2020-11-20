@@ -67,7 +67,6 @@ exports.createPages = ({ actions, graphql }) => {
       }
       site {
         siteMetadata {
-          pathPrefix
           title
         }
       }
