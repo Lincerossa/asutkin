@@ -86,7 +86,7 @@ const Layout = ({ children, pageContext, hasMagicMouse = true, inverted = true, 
         {children}
       </S.Main>
     
-      <Header currentRoute={currentRoute} routes={routes} pathPrefix={siteMetadata.pathPrefix} inverted={inverted ? true : false} />
+      <Header currentRoute={currentRoute} routes={routes} inverted={inverted ? true : false} />
       {currentRoute.slug !== "/" && <Footer />}
       {hasMagicMouse && <S.MagicMouseWrapper>
         <S.MagicMouse  {...mouseStatus} />

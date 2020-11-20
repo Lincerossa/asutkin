@@ -1,5 +1,4 @@
 export { default as Layout } from './Layout'
-export { default as Sky } from './Sky'
 export { default as Title } from './Title'
 export { default as Wrapper } from './Wrapper'
 export { default as Padder } from './Padder'

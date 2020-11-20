@@ -1,12 +1,15 @@
 import styled from 'styled-components'
 
+const SIZES = {
+  small: 200,
+  regular: 500,
+  big: 900,
+  large: 1220
+}
+
 export const Wrapper = styled.div`
   width: 100%;
-
-  ${(props) => props.hasPadding && 'padding: 0 1rem'};
   margin: 0 auto;
-  ${(props) => props.size === 'small' && 'max-width: 200px'};
-  ${(props) => props.size === 'regular' && 'max-width: 500px'};
-  ${(props) => props.size === 'big' && 'max-width: 900px'};
-  ${(props) => props.size === 'large' && 'max-width: 1220px'};
+  ${(props) => props.hasPadding && 'padding: 0 1rem'};
+  max-width: ${props => `${SIZES[props.size]}px`};
 `

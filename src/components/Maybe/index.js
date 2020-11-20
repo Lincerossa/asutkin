@@ -4,7 +4,7 @@ import Background from '../Background'
 import Wrapper from '../Wrapper'
 import Padder from '../Padder'
 
-export const MaybeWithBackground = ({background, children}) => {
+export const WithBackground = ({background, children}) => {
 
  if( background){
    return <Background color={background}>{children} </Background>
@@ -12,7 +12,7 @@ export const MaybeWithBackground = ({background, children}) => {
  return children
 }
 
-export const MaybeWithWrapper = ({wrapper, children}) => {
+export const WithWrapper = ({wrapper, children}) => {
 
  if( wrapper){
    return <Wrapper size={wrapper}>{children} </Wrapper>
@@ -20,7 +20,7 @@ export const MaybeWithWrapper = ({wrapper, children}) => {
  return children
 }
 
-export const MaybeWithPadder = ({padder, children}) => {
+export const WithPadder = ({padder, children}) => {
 
  if(padder){
    return <Padder size={padder}>{children} </Padder>

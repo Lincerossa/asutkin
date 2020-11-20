@@ -1,63 +1,51 @@
 import { useState, useEffect} from 'react'
+import { isDesktop } from '../utility'
+const { MOUSEUP, MOUSEDOWN, MOUSEMOVE, MOUSEOUT } = global.constants
 
 function useMouse() {
-
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0
-  })
-
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [mouseStatus, setMouseStatus] = useState(null)
 
   function handleMouseDown() {
-    setMouseStatus('mousedown')
+    setMouseStatus(MOUSEDOWN)
   }
 
   function handleMouseUp() {
-    setMouseStatus('mouseup')
+    setMouseStatus(MOUSEUP)
   }
   function handleMouseOut() {
-    setMousePosition({
-      x: 0,
-      y: 0,
-    })
-    setMouseStatus('mouseup')
+    setMousePosition({ x: 0, y: 0 })
+    setMouseStatus(MOUSEUP)
   }
-
 
   function handleMouseMove(e) {
     setMousePosition({
-      x: e.clientX || (e.touches && e.touches[0].clientX) || 0,
-      y: e.clientY || (e.touches && e.touches[0].clientY) || 0,
+      x: e.clientX || (e?.touches?.[0]?.clientX) || 0,
+      y: e.clientY || (e?.touches?.[0]?.clientY) || 0,
     })
   }
 
-
-
   useEffect(() => {
-    if(typeof window === "undefined" || window.innerWidth <= 768) return
-    window.addEventListener('mousedown', handleMouseDown)
-    window.addEventListener('mousemove', handleMouseMove)
-    window.addEventListener('mouseup', handleMouseUp)
-    window.addEventListener('mouseout', handleMouseOut)
-    
+    if(isDesktop){
+      window.addEventListener(MOUSEDOWN, handleMouseDown)
+      window.addEventListener(MOUSEMOVE, handleMouseMove)
+      window.addEventListener(MOUSEUP, handleMouseUp)
+      window.addEventListener(MOUSEOUT, handleMouseOut)
+    }
     return () => {
-      if(typeof window === "undefined" || window.innerWidth <= 768) return
-      window.removeEventListener('mousedown', handleMouseDown)
-      window.removeEventListener('mouseup', handleMouseUp)
-      window.removeEventListener('mousemove', handleMouseMove)
-      window.removeEventListener('mouseout', handleMouseOut)
+      if(isDesktop){
+        window.removeEventListener(MOUSEDOWN, handleMouseDown)
+        window.removeEventListener(MOUSEUP, handleMouseUp)
+        window.removeEventListener(MOUSEMOVE, handleMouseMove)
+        window.removeEventListener(MOUSEOUT, handleMouseOut)
+      }
     }
   }, [])
 
   return {
-    mousePosition: {
-      ...mousePosition,
-      y: mousePosition.y 
-    },
+    mousePosition,
     mouseStatus,
   }
 }
-
 
 export default useMouse

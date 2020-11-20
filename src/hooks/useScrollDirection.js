@@ -1,26 +1,13 @@
-import  {useState, useEffect} from 'react'
-
-
+import  { useState, useEffect} from 'react'
 import usePrevious from './usePrevious'
 
+const { DOWN, UP } = global.constants
 
 export default () => {
 
   const [scrollPosition, setScrollPosition] = useState(null)
   const prevScrollPosition = usePrevious(scrollPosition)
-  const [scrollDirection, setDirection] = useState(null)
-
-  useEffect((e) => {
-
-    if(scrollPosition > prevScrollPosition && scrollPosition > 100) {
-      setDirection("down")
-    }
-    if(scrollPosition < prevScrollPosition){
-      setDirection("up")
-    }
-  },[scrollPosition, prevScrollPosition])
-
-
+  
   function handleGetDirection(){
     setScrollPosition(window.scrollY)
   }
@@ -34,6 +21,9 @@ export default () => {
   }, [])
 
 
-  return ({scrollDirection, scrollPosition})
+  return ({
+    scrollDirection: (scrollPosition > prevScrollPosition) && (scrollPosition > 100) ? DOWN : UP,
+    scrollPosition
+  })
 }
 
