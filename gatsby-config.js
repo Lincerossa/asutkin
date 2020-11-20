@@ -1,15 +1,10 @@
 const lang = process.argv.slice(process.argv.length - 1)
 
-const pathPrefix = process.env.NODE_ENV === "development" ? '' : `/${lang}`
-
-
 module.exports = {
   siteMetadata: {
     title: `Asutkin`,
-    lang,
-    pathPrefix
+    lang
   },
-  pathPrefix,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -22,7 +17,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
-        "ssr": true
+        ssr: true,
+        displayName: false
       },
     },
     {
