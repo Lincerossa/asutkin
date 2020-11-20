@@ -1,7 +1,11 @@
 import styled from 'styled-components'
 
+const SIZES = {
+  small: 1,
+  regular: 2,
+  big: 3,
+}
+
 export const Padder = styled.div`
-  ${props => props.size === 'small' && `padding: 1rem 0`};
-  ${props => props.size === 'regular' && `padding: 2rem 0`};
-  ${props => props.size === 'big' && `padding: 3rem 0`};
+  padding: ${props => `${SIZES[props.size]}rem 0`};
 `
