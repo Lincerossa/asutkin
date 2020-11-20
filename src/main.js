@@ -1,30 +1,26 @@
 import React from "react"
 
-import * as Components from "./components"
-import {MaybeWithBackground, MaybeWithWrapper, MaybeWithPadder } from './components/Maybe'
-
-const Layout = Components.Layout
+import * as C from "./components"
+import * as M from './components/Maybe'
 
 export default (props) => {
-  const { data } = props.pageContext
-  const { components } = data 
+  const { data: { components } } = props.pageContext
   return (
-  <Layout {...props}>
-  {
-    components?.map(({id, ...props}) => {
-      const Component = id.split("_")[0]
-      const C = Components[Component]
-      return (
-        <MaybeWithBackground {...props} key={id}>
-          <MaybeWithWrapper {...props}>
-            <MaybeWithPadder {...props}>
-              <C {...props} />
-            </MaybeWithPadder>
-          </MaybeWithWrapper>
-        </MaybeWithBackground>
+  <C.Layout {...props}>
+    {
+      components?.map(({id, ...props}) => {
+        const Component = C[id.split("_")[0]]
+        return (
+          <M.WithBackground {...props} key={id}>
+            <M.WithWrapper {...props}>
+              <M.WithPadder {...props}>
+                <Component {...props} />
+              </M.WithPadder>
+            </M.WithWrapper>
+          </M.WithBackground>
+        )
+      }
       )
     }
-    )
-  }
-  </Layout>
+  </C.Layout>
 )}
