@@ -5,6 +5,7 @@ function createPage(route){
   const { slug, routes, componentIds} = route
   
   const current = {
+    ...route,
     slug,
     currentRoute: route,
     components: componentIds.map(id => data.components.find(component => component.id === id)).filter(e => e)

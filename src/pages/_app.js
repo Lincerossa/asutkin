@@ -8,18 +8,22 @@ import GlobalStyle from '../style/global'
 import {Footer, Header, MagicMouse } from '../../src/components'
 import { routes } from '../../data'
 
-export default function App({ Component, pageProps }) {
-
+function App({ Component, pageProps = {} }) {
   const { query } = pageProps
-
-  const { currentRoute, inverted} = query
+  const { currentRoute, inverted, metaTitle, metaDescription } = query || {}
 
   return (
     <>
       <Head>
-        <title>My page title</title>
-        <meta property="og:title" content="My page title" key="title" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>{metaTitle}</title>
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+        <meta property="og:type" content="website" />
+        
+        <link defer async href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500&display=swap" rel="stylesheet" />
+        <link defer async rel="stylesheet" type="text/css" charSet="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+        <link defer async rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
       </Head>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
@@ -53,3 +57,5 @@ const Main = styled.main`
   padding-top: ${props => props.hasTitle ? '6rem' : '0'};
   ${props => props.status === "loading" && 'opacity: 0'};
 `
+
+export default App

@@ -1,5 +1,4 @@
 import React, { useState} from 'react'
-import PropTypes from "prop-types"
 import Link from 'next/link'
 import { CloseOutlined,MenuOutlined } from '@ant-design/icons';
 import Wrapper from '../Wrapper'
@@ -21,20 +20,21 @@ const Header = ({ routes, currentRoute, inverted }) => {
       <Wrapper size="large">
         <S.HeaderInner>
           <S.Logo inverted={shouldBeInverted}>
-            <Link href="/">
-             <Logo />
+            <Link href={"/"}>
+            <a>
+              <Logo />
+            </a>
             </Link>
           </S.Logo>
           <S.Menu isOpen={isOpen} inverted={shouldBeInverted}>
             <S.MenuItems>
               {
-                routes.filter(e => !e.hidden).map(({slug, label}) => {
-                  const isActive = slug === currentRoute.slug
-
-
+                routes?.filter(e => !e.hidden).map((route) => {
+                  const {slug, label} = route || {}
+                  const isActive = slug === currentRoute?.slug
                   return(
                     <S.MenuItem key={slug} isActive={isActive} inverted={shouldBeInverted}>
-                      <Link href={slug}>{label}</Link>
+                      <Link href={slug}><a>{label}</a></Link>
                     </S.MenuItem>
                   )
                 })
@@ -47,25 +47,6 @@ const Header = ({ routes, currentRoute, inverted }) => {
       </Wrapper>
     </S.Header>
   )
-}
-
-
-Header.propTypes = {
-  currentRoute: PropTypes.object.isRequired,
-  inverted: PropTypes.bool.isRequired,
-  routes: PropTypes.arrayOf(
-    PropTypes.shape({
-      slug: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-      icon: PropTypes.string,
-      routes: PropTypes.arrayOf(
-        PropTypes.shape({
-          slug: PropTypes.string.isRequired,
-          label: PropTypes.string.isRequired,
-          icon: PropTypes.string,
-      }))
-    }).isRequired
-  ),
 }
 
 export default React.memo(Header)

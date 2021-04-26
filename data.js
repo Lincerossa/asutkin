@@ -7,7 +7,6 @@ const data = {
       metaDescription: "Home description",
       metaImage: null,
       hidden: true,
-      inverted: true,
       componentIds: ["Hero_homepage"]
     },
     {
@@ -16,7 +15,7 @@ const data = {
       metaTitle: "Escursioni",
       metaDescription: "Escursioni description",
       metaImage: null,
-      hidden: true,
+      inverted: true,
       componentIds: ["Hero_escursioni", "RichText_escursioni", "ListOfCards_escursioni"],
       routes: [
         {

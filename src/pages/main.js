@@ -2,12 +2,8 @@ import React from "react"
 import * as C from "../components"
 import * as M from '../components/Maybe'
 
-
-
 const Main = (props) => {
-  const { query } = props
-
-  const { components } = query
+  const { query: { components } } = props
 
   return components?.map(({id, ...props}) => {
     const Component = C[id.split("_")[0]]
@@ -24,7 +20,7 @@ const Main = (props) => {
 }
 
 
-Main.getInitialProps = async ({query}) => {
+Main.getInitialProps = async ({ query }) => {
   return {
     query
   }

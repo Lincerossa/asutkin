@@ -1,7 +1,7 @@
 import  { useState, useEffect} from 'react'
 import usePrevious from './usePrevious'
 
-export default () => {
+function useScrollDirection () {
 
   const [scrollPosition, setScrollPosition] = useState(null)
   const prevScrollPosition = usePrevious(scrollPosition)
@@ -24,4 +24,4 @@ export default () => {
     scrollPosition
   })
 }
-
+export default useScrollDirection
