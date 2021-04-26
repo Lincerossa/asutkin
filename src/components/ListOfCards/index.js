@@ -6,10 +6,9 @@ import List from '../List'
 import * as S from './styles'
 
 export default ({items}) => {
-
   return (<>
     <List columns={3}>
-      {items.map(item => <Link key={item.slug} to={item.slug} disabled={!item.slug}> <S.ListItem> <Card {...item} /></S.ListItem></Link>)}
+      {items.map(item => <Link key={item.slug} href={item.slug} disabled={!item.slug}><a><S.ListItem> <Card {...item} /></S.ListItem></a></Link>)}
     </List>
   </>
   )

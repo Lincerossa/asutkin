@@ -6,9 +6,14 @@ import 'mapbox-gl/dist/mapbox-gl.css'
 import theme from '../style/theme'
 import GlobalStyle from '../style/global'
 import {Footer, Header, MagicMouse } from '../../src/components'
+import { routes } from '../../data'
 
 export default function App({ Component, pageProps }) {
-  const { currentRoute, routes, inverted} = pageProps
+
+  const { query } = pageProps
+
+  const { currentRoute, inverted} = query
+
   return (
     <>
       <Head>

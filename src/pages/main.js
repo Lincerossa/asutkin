@@ -1,18 +1,14 @@
 import React from "react"
-import { useRouter } from 'next/router'
 import * as C from "../components"
 import * as M from '../components/Maybe'
 
 
 
 const Main = (props) => {
-  const { data } = props
+  const { query } = props
 
-  const components = [{
-    id: "RichText_0",
-    text:"<h1>bellissimo titolo</h2>"
-  }]
-  
+  const { components } = query
+
   return components?.map(({id, ...props}) => {
     const Component = C[id.split("_")[0]]
     return (
@@ -30,7 +26,7 @@ const Main = (props) => {
 
 Main.getInitialProps = async ({query}) => {
   return {
-    data: query.data
+    query
   }
 }
 

@@ -1,36 +1,39 @@
 
+const data = require("./data.js")
 
-// function generateRoute(route){
-//   const { slug, routes, componentIds} = route
+function createPage(route){
+  const { slug, routes, componentIds} = route
   
-//   createPage({
-//     path: slug,
-//     component: path.resolve("./src/main.js"),
-//     context: {
-//       data: {
-//         ...data.node.frontmatter,
-//         components: componentIds.map(id => components.find(component => component.id === id)).filter(e => e)
-//       },
-//       currentRoute: route,
-//       siteMetadata
-//     }
-//   })
+  const current = {
+    slug,
+    currentRoute: route,
+    components: componentIds.map(id => data.components.find(component => component.id === id)).filter(e => e)
+  }
+  if(!routes) return current
 
-//   if(routes && routes.length > 0) routes.map(innerRoute => generateRoute({...innerRoute, slug: `${route.slug}${innerRoute.slug}` }))
-
-// }
-
-// routes.map(generateRoute)
-
+  return [
+    current,
+    ...routes.map(innerRoute => createPage({...innerRoute, slug: `${route.slug}${innerRoute.slug}` }))
+  ]
+}
 
 module.exports = {
+  onDemandEntries: {
+    // period (in ms) where the server will keep pages in the buffer
+    maxInactiveAge: 25 * 1000,
+    // number of pages that should be kept simultaneously without being disposed
+    pagesBufferLength: 5,
+  },
   exportPathMap: async function (
     defaultPathMap,
     { dev, dir, outDir, distDir, buildId }
   ) {
-    return {
-      '/': { page: '/main' },
-      '/about': { page: '/main', query: {title: "prova", data: "qui dati incredibili"}},
-    }
+
+    const result = data.routes.map(createPage).flat(3).reduce((acc, val) => ({
+      ...acc,
+      [val.slug]: {page: '/main', query: val}
+    }), {})
+
+    return result
   },
 }

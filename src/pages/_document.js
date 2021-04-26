@@ -34,9 +34,8 @@ class MyDocument extends Document {
       <Html>
         <Head>
         <link defer async href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500&display=swap" rel="stylesheet" />
-        <link defer async rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+        <link defer async rel="stylesheet" type="text/css" charSet="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
         <link defer async rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-        <title>{metaTitle}</title>
         <meta property="description" content={metaDescription} />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />

@@ -28,7 +28,7 @@ const Header = ({ routes, currentRoute, inverted }) => {
           <S.Menu isOpen={isOpen} inverted={shouldBeInverted}>
             <S.MenuItems>
               {
-                routes?.filter(e => !e.hidden).map(({slug, label}) => {
+                routes.filter(e => !e.hidden).map(({slug, label}) => {
                   const isActive = slug === currentRoute.slug
 
 

@@ -52,7 +52,7 @@ export default createGlobalStyle`
   *:after {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    ${'' /* cursor: none; */}
+    cursor: none;
   }
 
   a{
