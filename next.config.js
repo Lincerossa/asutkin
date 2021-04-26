@@ -11,14 +11,14 @@ function createPage(route){
       currentRoute: route,
       components: componentIds.map(id => data.components.find(component => component.id === id)).filter(e => e)
     },
-    ...(routes ? routes.map(innerRoute => createPage({...innerRoute, slug: `${route.slug}${innerRoute.slug}` })) : [])
+    ...(routes ? routes.flatMap(innerRoute => createPage({...innerRoute, slug: `${route.slug}${innerRoute.slug}` })) : [])
   ]
 }
 
 module.exports = {
   exportPathMap: async function () {
 
-    return data.routes.map(createPage).flat(3).reduce((acc, val) => ({
+    return data.routes.flatMap(createPage).reduce((acc, val) => ({
       ...acc,
       [val.slug]: {page: '/main', query: val}
     }), {})
