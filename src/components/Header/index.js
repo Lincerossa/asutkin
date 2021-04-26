@@ -1,11 +1,11 @@
 import React, { useState} from 'react'
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import Link from 'next/link'
 import { CloseOutlined,MenuOutlined } from '@ant-design/icons';
-import Wrapper from '../../Wrapper'
+import Wrapper from '../Wrapper'
 import * as S from './styles'
 import Logo from '../Logo'
-import { useScrollDirection } from '../../../hooks'
+import { useScrollDirection } from '../../hooks'
 
 
 const Header = ({ routes, currentRoute, inverted }) => {
@@ -21,20 +21,20 @@ const Header = ({ routes, currentRoute, inverted }) => {
       <Wrapper size="large">
         <S.HeaderInner>
           <S.Logo inverted={shouldBeInverted}>
-            <Link to="/">
+            <Link href="/">
              <Logo />
             </Link>
           </S.Logo>
           <S.Menu isOpen={isOpen} inverted={shouldBeInverted}>
             <S.MenuItems>
               {
-                routes.filter(e => !e.hidden).map(({slug, label}) => {
+                routes?.filter(e => !e.hidden).map(({slug, label}) => {
                   const isActive = slug === currentRoute.slug
 
 
                   return(
                     <S.MenuItem key={slug} isActive={isActive} inverted={shouldBeInverted}>
-                      <Link to={slug}>{label}</Link>
+                      <Link href={slug}>{label}</Link>
                     </S.MenuItem>
                   )
                 })

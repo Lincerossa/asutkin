@@ -1,4 +1,3 @@
----
 routes:
   - slug: /
     label: Home
