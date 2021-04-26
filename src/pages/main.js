@@ -19,7 +19,6 @@ const Main = (props) => {
   })
 }
 
-
 Main.getInitialProps = async ({ query }) => {
   return {
     query
