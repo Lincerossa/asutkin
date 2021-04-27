@@ -55,3 +55,7 @@ public
 
 build/
 reduxcache*
+
+.next
+
+out

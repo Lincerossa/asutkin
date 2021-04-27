@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-const { DOWN } = global.constants
 
 export const Header = styled.div`
   position: fixed;
@@ -14,7 +13,7 @@ export const Header = styled.div`
   justify-content: space-between;
   background: ${props => props.inverted ? 'transparent' : "rgb(255,255,255,.9)"};
   box-shadow: ${props => props.inverted ? "none" : "0px 2px 8px rgba(0,0,0,0.15)"};
-  ${props => props.scrollDirection === DOWN
+  ${props => props.scrollDirection === "down"
     ? 'transform: translate(0,-100%);'
     :'transform: translate(0,0%);'
   }

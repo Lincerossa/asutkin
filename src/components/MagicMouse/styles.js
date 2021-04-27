@@ -20,7 +20,6 @@ export const MagicMouseWrapper = styled.div`
   right: 0;
   z-index: 1001;
   display: none;
-
   @media (min-width: 768px){
     display: block;
     pointer-events: none;
@@ -51,27 +50,4 @@ export const MagicMouse = styled.div.attrs(props => ({
     pointer-events: none;
   }
 
-`
-
-export const Layout = styled.div`
-`
-
-
-export const Title = styled.div`
-  font-weight: 400;
-  color: ${props => props.theme.colors.primary};
-  font-size: 2.5rem;
-  letter-spacing: 0.04rem;
-  margin-bottom: 2rem;
-
-  @media (min-width:768px){
-    font-size: 3rem;
-    margin-bottom: 2rem;
-  }
-`
-
-export const Main = styled.main`
-  min-height: 100vh;
-  padding-top: ${props => props.hasTitle ? '6rem' : '0'};
-  ${props => props.status === "loading" && 'opacity: 0'};
 `

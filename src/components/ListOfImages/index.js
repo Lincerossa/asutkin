@@ -15,6 +15,7 @@ export default ({items}) => {
     setInitialSlideIndexIndex(null)
   }
 
+
   return (
   <>
     <List columns={3}>

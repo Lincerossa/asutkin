@@ -1,9 +1,7 @@
 import  { useState, useEffect} from 'react'
 import usePrevious from './usePrevious'
 
-const { DOWN, UP } = global.constants
-
-export default () => {
+function useScrollDirection () {
 
   const [scrollPosition, setScrollPosition] = useState(null)
   const prevScrollPosition = usePrevious(scrollPosition)
@@ -22,8 +20,8 @@ export default () => {
 
 
   return ({
-    scrollDirection: (scrollPosition > prevScrollPosition) && (scrollPosition > 100) ? DOWN : UP,
+    scrollDirection: (scrollPosition > prevScrollPosition) && (scrollPosition > 100) ? "down" : "up",
     scrollPosition
   })
 }
-
+export default useScrollDirection
