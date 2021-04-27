@@ -28,8 +28,7 @@ class MyDocument extends Document {
     }
   }
 
-  render(props) {
-    const {metaTitle, metaDescription} = props || {}
+  render() {
     return (
       <Html>
         <Head>

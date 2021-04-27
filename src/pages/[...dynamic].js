@@ -1,7 +1,7 @@
 import React from "react"
 import * as C from "../components"
 import * as M from '../components/Maybe'
-import { routes, components } from '../../data'
+import { routes, components } from '../data'
 
 const App = (props) => {
   const { components } = props

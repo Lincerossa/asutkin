@@ -15,7 +15,6 @@ const data = {
       metaTitle: "Escursioni",
       metaDescription: "Escursioni description",
       metaImage: null,
-      inverted: true,
       componentIds: ["Hero_escursioni", "RichText_escursioni", "ListOfCards_escursioni"],
     },
     {
@@ -733,7 +732,7 @@ const data = {
   },
 
   {
-    id: "ListOfImages_isolaBregaglia ",
+    id: "ListOfImages_isolaBregaglia",
     wrapper: "large",
     padder: "regular",
     background: "#fafafafa",

@@ -7,13 +7,13 @@ import Logo from '../Logo'
 import { useScrollDirection } from '../../hooks'
 
 
-const Header = ({ routes, currentRoute, inverted }) => {
+const Header = ({ routes, currentRoute }) => {
   const {scrollDirection, scrollPosition} = useScrollDirection()
   const [isOpen, setMenuOpen] = useState(null)
 
   const innerHeight = (typeof window !== "undefined" && window.innerHeight) || 100
 
-  const shouldBeInverted = inverted && (scrollPosition < innerHeight)
+  const shouldBeInverted =  (scrollPosition < innerHeight)
   
   return (
     <S.Header scrollDirection={scrollDirection} isOpen={isOpen} inverted={shouldBeInverted}>
@@ -21,7 +21,9 @@ const Header = ({ routes, currentRoute, inverted }) => {
         <S.HeaderInner>
           <S.Logo inverted={shouldBeInverted}>
             <Link href="/">
-            <Logo />
+              <a>
+                <Logo />
+              </a>
             </Link>
           </S.Logo>
           <S.Menu isOpen={isOpen} inverted={shouldBeInverted}>
@@ -32,7 +34,7 @@ const Header = ({ routes, currentRoute, inverted }) => {
                   const isActive = slug === currentRoute?.slug
                   return(
                     <S.MenuItem key={slug} isActive={isActive} inverted={shouldBeInverted}>
-                      <Link href={slug}><a>{label}</a></Link>
+                      <Link href={`/${slug}`}><a>{label}</a></Link>
                     </S.MenuItem>
                   )
                 })

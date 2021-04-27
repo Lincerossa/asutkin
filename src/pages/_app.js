@@ -6,10 +6,10 @@ import 'mapbox-gl/dist/mapbox-gl.css'
 import theme from '../style/theme'
 import GlobalStyle from '../style/global'
 import {Footer, Header, MagicMouse } from '../../src/components'
-import { routes } from '../../data'
+import { routes } from '../data'
 
-function App({ Component, pageProps = {} }) {
-  const { currentRoute, inverted, metaTitle, metaDescription } = pageProps || {}
+function App({ Component, pageProps }) {
+  const { currentRoute, inverted, metaTitle, metaDescription } = pageProps
 
   return (
     <>
@@ -35,20 +35,6 @@ function App({ Component, pageProps = {} }) {
     </>
   )
 }
-
-
-const Title = styled.div`
-  font-weight: 400;
-  color: ${props => props.theme.colors.primary};
-  font-size: 2.5rem;
-  letter-spacing: 0.04rem;
-  margin-bottom: 2rem;
-
-  @media (min-width:768px){
-    font-size: 3rem;
-    margin-bottom: 2rem;
-  }
-`
 
 const Main = styled.main`
   min-height: 100vh;
