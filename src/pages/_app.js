@@ -17,6 +17,8 @@ function App({ Component, pageProps }) {
         <title>{metaTitle}</title>
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
+        <meta property="title" content={metaTitle} />
+        <meta property="description" content={metaDescription} />
         <meta property="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
         <meta property="og:type" content="website" />
         <link defer async href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500&display=swap" rel="stylesheet" />
