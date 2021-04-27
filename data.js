@@ -1,7 +1,7 @@
 const data = {
   routes: [
     {
-      slug: "/",
+      slug: "",
       label: "Home",
       metaTitle: "Home",
       metaDescription: "Home description",
@@ -10,80 +10,78 @@ const data = {
       componentIds: ["Hero_homepage"]
     },
     {
-      slug: "/escursioni",
+      slug: "escursioni",
       label: "Escursioni",
       metaTitle: "Escursioni",
       metaDescription: "Escursioni description",
       metaImage: null,
       inverted: true,
       componentIds: ["Hero_escursioni", "RichText_escursioni", "ListOfCards_escursioni"],
-      routes: [
-        {
-          slug: "/pescedo",
-          label: "Pescedo",
-          metaTitle: "Pescedo",
-          metaDescription: "Pescedo description",
-          metaImage: null,
-          hidden: true,
-          componentIds: ["Hero_pescedo", "InfoPanel_pescedo", "RichText_pescedo", "ListOfImages_pescedo" ]
-        },
-        { slug: "/alpe-granda",
-          label: "Alpe Granda",
-          metaTitle: "Alpe Granda",
-          metaDescription: "Alpe Granda descrizione",
-          metaImage: "",
-          hidden: true,
-          componentIds: ["Hero_alpeGranda", "InfoPanel_alpeGranda", "RichText_alpeGranda1", "ListOfImages_alpeGranda1", "RichText_alpeGranda2", "ListOfImages_alpeGranda2"]
-        },
-        { slug: "/crotto-dangri",
-          label: "Crotto Dangri",
-          metaTitle: "Crotto Dangri",
-          metaDescription: "Crotto Dangri descrizione",
-          metaImage: "",
-          hidden: true,
-          componentIds: ["Hero_crottoDangri", "InfoPanel_crottoDangri", "RichText_crottoDangri", "ListOfImages_crottoDangri" ]
-        },
-        { slug: "/isola-bregaglia",
-          label: "Isola - Bregaglia",
-          metaTitle: "Isola - Bregaglia",
-          metaDescription: "Isola - Bregaglia descrizione",
-          metaImage: "",
-          hidden: true,
-          componentIds: ["Hero_isolaBregaglia", "InfoPanel_isolaBregaglia", "RichText_isolaBregaglia", "ListOfImages_isolaBregaglia" ]
-        },
-        { slug: "/segna",
-          label: "Segna",
-          metaTitle: "Segna",
-          metaDescription: "Segna descrizione",
-          metaImage: "",
-          hidden: true,
-          componentIds: ["Hero_segna", "InfoPanel_segna", "RichText_segna", "ListOfImages_segna" ]
-        },
-        { slug: "/piani-di-gembro",
-          label: "Piani di Gemmbro",
-          metaTitle: "Piani di Gemmbro",
-          metaDescription: "Piani di Gemmbro descrizione",
-          metaImage: "",
-          hidden: true,
-          componentIds: ["Hero_pianiDiGembro", "InfoPanel_pianiDiGembro", "RichText_pianiDiGembro", "ListOfImages_pianiDiGembro" ]
-        },
-        { slug: "/lagh-da-cavloc",
-          label: "Lägh da Cavloc",
-          metaTitle: "Lägh da Cavloc",
-          metaDescription: "Lägh da Cavloc descrizione",
-          metaImage: "",
-          hidden: true,
-          componentIds: ["Hero_laghDaCavloc", "InfoPanel_laghDaCavloc", "RichText_laghDaCavloc", "ListOfImages_laghDaCavloc" ]
-        },
-        { slug: "/pian-di-spagna",
-          label: "Pian di Spagna",
-          metaTitle: "Pian di Spagna",
-          metaDescription: "Pian di Spagna descrizione",
-          metaImage: "",
-          hidden: true,
-          componentIds: ["Hero_pianDiSpagna", "InfoPanel_pianDiSpagna", "RichText_pianDiSpagna", "ListOfImages_pianDiSpagna" ]
-        }
-      ]
+    },
+    {
+      slug: "escursioni/pescedo",
+      label: "Pescedo",
+      metaTitle: "Pescedo",
+      metaDescription: "Pescedo description",
+      metaImage: null,
+      hidden: true,
+      componentIds: ["Hero_pescedo", "InfoPanel_pescedo", "RichText_pescedo", "ListOfImages_pescedo" ]
+    },
+    { slug: "escursioni/alpe-granda",
+      label: "Alpe Granda",
+      metaTitle: "Alpe Granda",
+      metaDescription: "Alpe Granda descrizione",
+      metaImage: "",
+      hidden: true,
+      componentIds: ["Hero_alpeGranda", "InfoPanel_alpeGranda", "RichText_alpeGranda1", "ListOfImages_alpeGranda1", "RichText_alpeGranda2", "ListOfImages_alpeGranda2"]
+    },
+    { slug: "escursioni/crotto-dangri",
+      label: "Crotto Dangri",
+      metaTitle: "Crotto Dangri",
+      metaDescription: "Crotto Dangri descrizione",
+      metaImage: "",
+      hidden: true,
+      componentIds: ["Hero_crottoDangri", "InfoPanel_crottoDangri", "RichText_crottoDangri", "ListOfImages_crottoDangri" ]
+    },
+    { slug: "escursioni/isola-bregaglia",
+      label: "Isola - Bregaglia",
+      metaTitle: "Isola - Bregaglia",
+      metaDescription: "Isola - Bregaglia descrizione",
+      metaImage: "",
+      hidden: true,
+      componentIds: ["Hero_isolaBregaglia", "InfoPanel_isolaBregaglia", "RichText_isolaBregaglia", "ListOfImages_isolaBregaglia" ]
+    },
+    { slug: "escursioni/segna",
+      label: "Segna",
+      metaTitle: "Segna",
+      metaDescription: "Segna descrizione",
+      metaImage: "",
+      hidden: true,
+      componentIds: ["Hero_segna", "InfoPanel_segna", "RichText_segna", "ListOfImages_segna" ]
+    },
+    { slug: "escursioni/piani-di-gembro",
+      label: "Piani di Gemmbro",
+      metaTitle: "Piani di Gemmbro",
+      metaDescription: "Piani di Gemmbro descrizione",
+      metaImage: "",
+      hidden: true,
+      componentIds: ["Hero_pianiDiGembro", "InfoPanel_pianiDiGembro", "RichText_pianiDiGembro", "ListOfImages_pianiDiGembro" ]
+    },
+    { slug: "escursioni/lagh-da-cavloc",
+      label: "Lägh da Cavloc",
+      metaTitle: "Lägh da Cavloc",
+      metaDescription: "Lägh da Cavloc descrizione",
+      metaImage: "",
+      hidden: true,
+      componentIds: ["Hero_laghDaCavloc", "InfoPanel_laghDaCavloc", "RichText_laghDaCavloc", "ListOfImages_laghDaCavloc" ]
+    },
+    { slug: "escursioni/pian-di-spagna",
+      label: "Pian di Spagna",
+      metaTitle: "Pian di Spagna",
+      metaDescription: "Pian di Spagna descrizione",
+      metaImage: "",
+      hidden: true,
+      componentIds: ["Hero_pianDiSpagna", "InfoPanel_pianDiSpagna", "RichText_pianDiSpagna", "ListOfImages_pianDiSpagna" ]
     }
   ],
   components: [
@@ -196,7 +194,7 @@ const data = {
       background: "#fafafafa",
       items: [
         {
-          slug: "/escursioni/pian-di-spagna",
+          slug: "escursioni/pian-di-spagna",
           supertitle: "06.06.2020",
           title: "Pian di Spagna",
           tags: [ "🏔Lago di Como", "⌛︎1h30min", "⇡ 0m" ],
@@ -206,7 +204,7 @@ const data = {
           }
         },
         {
-          slug: "/escursioni/pescedo",
+          slug: "escursioni/pescedo",
           supertitle: "30.05.2020",
           title: "Alpe Pescedo",
           tags: [ "🏔Lago di Como", "⌛︎1h", "⇡ 300m" ],
@@ -216,7 +214,7 @@ const data = {
           }
         },
         {
-          slug: "/escursioni/alpe-granda",
+          slug: "escursioni/alpe-granda",
           supertitle:"24.05.2020",
           title: "Rifugio Alpe Granda",
           tags: [ "🏔Valtellina", "⌛︎2h", "⇡ 450m" ],
@@ -226,7 +224,7 @@ const data = {
           }
         },
         {
-          slug: "/escursioni/segna",
+          slug: "escursioni/segna",
           supertitle:"17.05.2020",
           title: "Segna",
           tags: [ "🏔Lago di Como", "⌛︎2h", "⇡ 400m" ],
@@ -236,7 +234,7 @@ const data = {
           }
         },
         {
-          slug: "/escursioni/piani-di-gembro",
+          slug: "escursioni/piani-di-gembro",
           supertitle:"09.05.2020",
           title: "Piani di Gembro (Aprica)",
           tags: [ "🏔Valtellina", "⌛︎3h", "⇡ 100m" ],
@@ -246,7 +244,7 @@ const data = {
           }
         },
         {
-          slug: "/escursioni/crotto-dangri",
+          slug: "escursioni/crotto-dangri",
           supertitle: "08.03.2020",
           title: "Crotto Dangri",
           tags: [ "🏔Lago di Como", "⌛︎1h", "⇡ 100m" ],
@@ -256,7 +254,7 @@ const data = {
           }
         },
         {
-          slug: "/escursioni/isola-bregaglia",
+          slug: "escursioni/isola-bregaglia",
           supertitle: "29.09.2019",
           title: "Isola - Bregaglia (Svizzera)",
           tags: [ "🏔Passo Maloja", "⌛︎4h", "⇡ 50m" ],
@@ -266,7 +264,7 @@ const data = {
           }
         },
         {
-          slug: "/escursioni/lagh-da-cavloc",
+          slug: "escursioni/lagh-da-cavloc",
           supertitle: "07.09.2019",
           title: "Lägh da Cavloc (Svizzera)",
           tags: [ "🏔Passo Maloja", "⌛︎3h", "⇡ 200m" ],

@@ -9,8 +9,7 @@ import {Footer, Header, MagicMouse } from '../../src/components'
 import { routes } from '../../data'
 
 function App({ Component, pageProps = {} }) {
-  const { query } = pageProps
-  const { currentRoute, inverted, metaTitle, metaDescription } = query || {}
+  const { currentRoute, inverted, metaTitle, metaDescription } = pageProps || {}
 
   return (
     <>

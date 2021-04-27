@@ -1,9 +1,10 @@
 import React from "react"
 import * as C from "../components"
 import * as M from '../components/Maybe'
+import { routes, components } from '../../data'
 
-const Main = (props) => {
-  const { query: { components } } = props
+const App = (props) => {
+  const { components } = props
 
   return components?.map(({id, ...props}) => {
     const Component = C[id.split("_")[0]]
@@ -19,10 +20,18 @@ const Main = (props) => {
   })
 }
 
-Main.getInitialProps = async ({ query }) => {
+
+export async function getStaticProps() {
+
+  const currentRoute = routes.find((e) => e.slug === "")
+
   return {
-    query
+    props: {
+      ...currentRoute,
+      currentRoute: currentRoute.slug,
+      components: currentRoute.componentIds.map(id => components.find(component => component.id === id)).filter(e => e)
+    }
   }
 }
 
-export default Main
+export default App

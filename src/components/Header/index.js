@@ -20,10 +20,8 @@ const Header = ({ routes, currentRoute, inverted }) => {
       <Wrapper size="large">
         <S.HeaderInner>
           <S.Logo inverted={shouldBeInverted}>
-            <Link href={"/"}>
-            <a>
-              <Logo />
-            </a>
+            <Link href="/">
+            <Logo />
             </Link>
           </S.Logo>
           <S.Menu isOpen={isOpen} inverted={shouldBeInverted}>
