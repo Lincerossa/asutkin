@@ -1,23 +1,19 @@
 import React from 'react'
+import * as Icons from '@ant-design/icons'
+import dynamic from 'next/dynamic'
 import * as S from './styles'
-import * as Icons from '@ant-design/icons';
 
-import { isDesktop } from '../../utility'
-
-const Map = React.lazy(() =>
-  import("../Map")
+const DynamicMapNoSSR = dynamic(
+  () => import('../Map'),
+  { ssr: false, loading: () => <p>...</p> },
 )
-
-
 
 const InfoPanel = ({ listOfPoints, items }) => (
   <S.InfoPanel>
     <S.ItemsWrapper>
       {
-        items.map(({icon, title, text}) => {
-          
+        items.map(({ icon, title, text }) => {
           const Icon = Icons[icon]
-          
           return (
             <S.Item key={title}>
               <S.ItemTitle>{title}</S.ItemTitle>
@@ -31,11 +27,7 @@ const InfoPanel = ({ listOfPoints, items }) => (
       }
     </S.ItemsWrapper>
     <S.MapWrapper>
-      {isDesktop && (
-        <React.Suspense fallback={<div />}>
-          <Map listOfPoints={listOfPoints} />
-        </React.Suspense>
-      )}
+      <DynamicMapNoSSR listOfPoints={listOfPoints} />
     </S.MapWrapper>
   </S.InfoPanel>
 )
