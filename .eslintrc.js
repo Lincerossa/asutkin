@@ -11,6 +11,8 @@ module.exports = {
     'import/prefer-default-export': 0,
     'react/function-component-definition': 0,
     'react/prop-types': 0,
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-props-no-spreading': 'off',
   },
   settings: {
     'import/resolver': {
