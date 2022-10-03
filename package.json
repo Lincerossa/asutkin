@@ -15,7 +15,7 @@
     "react-lazy-images": "^1.1.0",
     "react-mapbox-gl": "^5.1.1",
     "react-slick": "^0.29.0",
-    "styled-components": "^5.3.5",
+    "styled-components": "^5.3.6",
     "trim-html": "^0.1.9"
   },
   "devDependencies": {
